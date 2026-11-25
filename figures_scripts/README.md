@@ -9,7 +9,7 @@ The submitted figures were produced in several layout passes that reuse one plot
 | `layout_20261014/` | `make_figures.py`: compact three-column plates; renders Fig. 3 and Fig. S11 and provides panel functions for Figs. 4 and 6. |
 | `feeding_20261014/` | `rebuild_figure8.py`: feeding-perturbation panels on the 1,791 complete-window origins (Fig. 6a, b). |
 | `submission_20261018/` | `compact_temporal_figure.py` (Fig. 2), `rebuild_figures.py` (Figs. 4, 5, 6 and S4 with bootstrap bands and current labels), `redraw_fig5.py` (Fig. 5 with segment-respecting intervals, as first submitted). |
-| `revision_20261126/` | `rebuild_plain_figures.py`: final versions of Figs. 3–6 and S11 for the revised article. It reuses the builders above with the same data and layout, but sets all tick, axis, legend and annotation text in regular weight, keeps x tick labels horizontal (staggering the long HSW lag-window labels in Fig. 3e, f), and labels axes Metered flow and Fulfilled fraction. |
+| `revision_20261126/` | `rebuild_plain_figures.py`: final versions of Figs. 3–6 and S11 for the revised article. It reuses the builders above with the same data and layout, but sets all tick, axis, legend and annotation text in regular weight, keeps x tick labels horizontal (staggering the long HSW lag-window labels in Fig. 3e, f), puts axis titles on one line when they fit within their axis, and labels axes Metered flow and Fulfilled fraction. |
 
 Outputs are written next to each script (`figures_ready/`, `figures/`, `compact_figures/`) or to `figures_output/`; these folders are ignored by git. PDF metadata use the author string `Anonymous`.
 

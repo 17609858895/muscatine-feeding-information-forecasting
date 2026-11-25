@@ -59,6 +59,27 @@ def plain(fig, axes, stem):
             REPORT.setdefault(stem, []).append({'ticks': [t.get_text() for t in labels], 'fontsize': size, 'mode': mode})
 
 
+def join_labels(fig, axes, stem):
+    """Put two-line axis titles on one line when the one-line title is no longer than its axis."""
+    changed = False
+    for a in axes:
+        for lab, horizontal in ((a.xaxis.label, True), (a.yaxis.label, False)):
+            s = lab.get_text()
+            if '\n' not in s:
+                continue
+            one = ' '.join(part.strip() for part in s.split('\n'))
+            lab.set_text(one)
+            fig.canvas.draw(); r = fig.canvas.get_renderer()
+            le, ae = lab.get_window_extent(r), a.get_window_extent(r)
+            fits = (le.width <= 1.05 * ae.width) if horizontal else (le.height <= 1.05 * ae.height)
+            if fits:
+                changed = True
+            else:
+                lab.set_text(s)
+            REPORT.setdefault(stem, []).append({'axis_title': one, 'one_line': bool(fits)})
+    return changed
+
+
 def patch(layout, stem_hint=''):
     fit_group = layout.fit_group
 
@@ -70,7 +91,10 @@ def patch(layout, stem_hint=''):
         axes = [a for a in fig.axes if a not in before]
         plain(fig, axes, stem_hint or 'panel')
         top = .34 / fig.get_figheight(); pad = .045 / fig.get_figwidth()
-        bounds = fit_group(fig, axes, [x + pad, y + .025 / fig.get_figheight(), w - 2 * pad, h - top - .025 / fig.get_figheight()])
+        box = [x + pad, y + .025 / fig.get_figheight(), w - 2 * pad, h - top - .025 / fig.get_figheight()]
+        bounds = fit_group(fig, axes, box)
+        if join_labels(fig, axes, stem_hint or 'panel'):
+            bounds = fit_group(fig, axes, box)
         fig.text(x + .015 / fig.get_figwidth(), y + h, letter, fontsize=22 if standalone else 26, fontweight='bold', va='top', ha='left')
         return ax, axes, bounds
 
