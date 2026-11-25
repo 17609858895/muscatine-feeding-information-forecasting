@@ -1,0 +1,22 @@
+S8. Full CSV-path prediction equality.,,,,,,,
+"All 1,797 origins, nine horizons and two input regimes pass through actual CSV parsing and exported native LightGBM models. The same six-decimal feature function is used for offline training and prediction. Errors are in m3 h−1.",,,,,,,
+,,,,,,,
+Horizon (h),Inputs,Test origins,max difference m3 h,median,p95,p99,fraction above 1e 8
+1,past,1797,0,0,0,0,0
+1,feed,1797,0,0,0,0,0
+2,past,1797,0,0,0,0,0
+2,feed,1797,0,0,0,0,0
+3,past,1797,0,0,0,0,0
+3,feed,1797,0,0,0,0,0
+4,past,1797,0,0,0,0,0
+4,feed,1797,0,0,0,0,0
+6,past,1797,0,0,0,0,0
+6,feed,1797,0,0,0,0,0
+9,past,1797,0,0,0,0,0
+9,feed,1797,0,0,0,0,0
+12,past,1797,0,0,0,0,0
+12,feed,1797,0,0,0,0,0
+18,past,1797,0,0,0,0,0
+18,feed,1797,0,0,0,0,0
+24,past,1797,0,0,0,0,0
+24,feed,1797,0,0,0,0,0

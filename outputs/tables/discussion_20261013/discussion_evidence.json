@@ -1,0 +1,103 @@
+{
+  "error_structure_24h": {
+    "Persistence": {
+      "n": 1797,
+      "RMSE": 76.99,
+      "MAE": 57.16,
+      "median_abs": 42.94,
+      "q90_abs": 134.74,
+      "over_q90": 90.68,
+      "over_q95": 124.55,
+      "over_q99": 176.98,
+      "under_q05": -146.07
+    },
+    "PG-HQ ensemble [past]": {
+      "n": 1797,
+      "RMSE": 57.48,
+      "MAE": 44.0,
+      "median_abs": 34.38,
+      "q90_abs": 93.91,
+      "over_q90": 54.76,
+      "over_q95": 79.8,
+      "over_q99": 116.33,
+      "under_q05": -104.69
+    },
+    "PG-HQ ensemble [feed]": {
+      "n": 1797,
+      "RMSE": 45.52,
+      "MAE": 34.94,
+      "median_abs": 28.42,
+      "q90_abs": 73.94,
+      "over_q90": 62.59,
+      "over_q95": 81.5,
+      "over_q99": 126.05,
+      "under_q05": -64.67
+    }
+  },
+  "relative_reduction_feed_vs_past_24h": {
+    "RMSE": 0.208,
+    "MAE": 0.206,
+    "median_abs": 0.173,
+    "q90_abs": 0.213,
+    "over_q90": -0.143,
+    "over_q95": -0.021,
+    "over_q99": -0.084
+  },
+  "abrupt_decline_definition": "y(t+24) - y(t) <= 10th percentile (-90.7 m3/h)",
+  "decline_subset": {
+    "n": 180,
+    "RMSE_past": 76.39604174334661,
+    "RMSE_feed": 77.3218583070849,
+    "RMSE_past_other": 54.97720517794191,
+    "RMSE_feed_other": 40.46294594203682,
+    "mean_overprediction_past": 62.9420896649564,
+    "mean_overprediction_feed": 65.71742547509037
+  },
+  "event_20230111": {
+    "mean_y": 119.15474497755537,
+    "mean_feed_forecast": 261.73787167400576,
+    "mean_past_forecast": 225.47229895370472,
+    "mean_current_flow": 240.11269114462533,
+    "future_HSW_mean_GPM_event": 16.87039737654321,
+    "future_HSW_mean_GPM_test": 10.107051116292855
+  },
+  "perturbation_spearman_24h": {
+    "rho": 0.8830267766872925,
+    "p": 7.29127499278336e-130,
+    "n": 391
+  },
+  "cancellation_24h": {
+    "0.25": {
+      "RMSE_mean": 56.065,
+      "RMSE_min": 45.609,
+      "RMSE_max": 71.697,
+      "WAPE_mean": 0.266,
+      "WAPE_min": 0.005,
+      "WAPE_max": 0.702
+    },
+    "0.5": {
+      "RMSE_mean": 65.109,
+      "RMSE_min": 48.177,
+      "RMSE_max": 82.992,
+      "WAPE_mean": 0.507,
+      "WAPE_min": 0.069,
+      "WAPE_max": 0.953
+    }
+  },
+  "cancellation_spearman_24h": {
+    "rho": 0.9545923632610941,
+    "p": 1.3926397978696626e-21,
+    "n": 40
+  },
+  "test_HSW_episodes": {
+    "n_episodes": 17,
+    "median_duration_h": 23.0,
+    "max_duration_h": 811,
+    "volume_share_largest_5": 0.8231872932535795
+  },
+  "effective_n_AR1": {
+    "n": 5421,
+    "rho1": 0.92,
+    "n_eff": 225.8749999999999
+  }
+}

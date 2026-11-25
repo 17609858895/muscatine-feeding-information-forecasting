@@ -1,0 +1,31 @@
+S9. Symmetric nominal 90% intervals.,,,,,
+"Held-out calibration n = 360; hourly errors remain temporally dependent. Empirical coverage and mean width (m3 h−1) over 1,797 test origins. Adaptive finite-endpoint delayed rule and static order-statistic reference are reported separately.",,,,,
+,,,,,
+Horizon (h),Forecast,method,coverage,mean width,n calibration
+1,Persistence,Independent finite-endpoint ACI,0.9070673344462994,98.96540635063911,360
+1,PG-HQ ensemble [past],Independent finite-endpoint ACI,0.9104062326099054,70.92326346540833,360
+1,PG-HQ ensemble [feed],Independent finite-endpoint ACI,0.9115191986644408,71.20986845747314,360
+2,Persistence,Independent finite-endpoint ACI,0.905954368391764,95.10988470658025,360
+2,PG-HQ ensemble [past],Independent finite-endpoint ACI,0.90929326655537,83.3711170504821,360
+2,PG-HQ ensemble [feed],Independent finite-endpoint ACI,0.9115191986644408,79.3198971386851,360
+3,Persistence,Independent finite-endpoint ACI,0.9104062326099054,101.55591645210946,360
+3,PG-HQ ensemble [past],Independent finite-endpoint ACI,0.9098497495826378,89.37683759344529,360
+3,PG-HQ ensemble [feed],Independent finite-endpoint ACI,0.9165275459098498,79.69774027949771,360
+4,Persistence,Independent finite-endpoint ACI,0.9053978853644964,115.89981870204758,360
+4,PG-HQ ensemble [past],Independent finite-endpoint ACI,0.9104062326099054,97.67541456019777,360
+4,PG-HQ ensemble [feed],Independent finite-endpoint ACI,0.9143016138007792,94.0681177977372,360
+6,Persistence,Independent finite-endpoint ACI,0.9048414023372288,127.40165560151662,360
+6,PG-HQ ensemble [past],Independent finite-endpoint ACI,0.9065108514190318,112.40422196069125,360
+6,PG-HQ ensemble [feed],Independent finite-endpoint ACI,0.9165275459098498,96.86812748182844,360
+9,Persistence,Independent finite-endpoint ACI,0.899276572064552,154.1075528167733,360
+9,PG-HQ ensemble [past],Independent finite-endpoint ACI,0.905954368391764,131.5718080456989,360
+9,PG-HQ ensemble [feed],Independent finite-endpoint ACI,0.9131886477462438,109.72197883864104,360
+12,Persistence,Independent finite-endpoint ACI,0.8970506399554814,191.4499298870609,360
+12,PG-HQ ensemble [past],Independent finite-endpoint ACI,0.9037284362826934,145.9792216360905,360
+12,PG-HQ ensemble [feed],Independent finite-endpoint ACI,0.907623817473567,130.2849921808081,360
+18,Persistence,Independent finite-endpoint ACI,0.8953811908736784,252.04619667662325,360
+18,PG-HQ ensemble [past],Independent finite-endpoint ACI,0.900946021146355,195.3334022809692,360
+18,PG-HQ ensemble [feed],Independent finite-endpoint ACI,0.9143016138007792,137.6697164888237,360
+24,Persistence,Independent finite-endpoint ACI,0.895937673900946,280.81808518599945,360
+24,PG-HQ ensemble [past],Independent finite-endpoint ACI,0.8964941569282137,206.22414425951425,360
+24,PG-HQ ensemble [feed],Independent finite-endpoint ACI,0.912632164718976,181.4222587540121,360

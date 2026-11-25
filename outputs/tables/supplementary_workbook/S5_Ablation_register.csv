@@ -1,0 +1,19 @@
+S5. Representation and persistence-anchor ablations.,,,,,,,,
+"A1–A5 identify the exact representation, target construction, information regime and feature dimension. RMSE is in m3 h−1.",,,,,,,,
+,,,,,,,,
+Horizon (h),configuration,representation,persistence anchor,executed feed,n features,RMSE m3 h,R2,Skill
+1,A1,Raw lags and rolling summaries,False,False,484,24.434653012967257,0.903966808136752,0.162702239754399
+1,A2,Process-group lag bins,False,False,132,24.99581685126993,0.8995051794151864,0.1434729417286687
+1,A3,Raw lags and rolling summaries,True,False,484,21.69117956815036,0.924321005937749,0.2567123396489799
+1,A4,Process-group lag bins,True,False,132,21.893408355581997,0.9229033039981276,0.2497826029883515
+1,A5,Process-group lag bins,True,True,135,22.04689844425137,0.9218184971119378,0.244522986353134
+6,A1,Raw lags and rolling summaries,False,False,484,37.646972261767154,0.7730252745137852,0.0189769591897586
+6,A2,Process-group lag bins,False,False,132,37.63588161360104,0.7731589865165809,0.0192659646723992
+6,A3,Raw lags and rolling summaries,True,False,484,33.00186199944126,0.8255808043852491,0.140021492672035
+6,A4,Process-group lag bins,True,False,132,33.00927862741676,0.8255023998610652,0.139828226587355
+6,A5,Process-group lag bins,True,True,135,29.132978566757604,0.8640788093891476,0.2408387313939445
+24,A1,Raw lags and rolling summaries,False,False,484,71.44924938184077,0.195780153958742,0.0719610256293399
+24,A2,Process-group lag bins,False,False,132,60.91218324970588,0.4154956105400096,0.2088247174210079
+24,A3,Raw lags and rolling summaries,True,False,484,63.98480174662474,0.3550395227004935,0.1689151348405977
+24,A4,Process-group lag bins,True,False,132,58.17417930142104,0.466861586605528,0.2443880634039663
+24,A5,Process-group lag bins,True,True,135,46.02723177042995,0.666259312337083,0.4021621593661312

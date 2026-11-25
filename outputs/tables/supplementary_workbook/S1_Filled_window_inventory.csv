@@ -1,0 +1,12 @@
+S1. Retained origins with filled targets or feeding windows.,,,,,
+"Historical predictor windows contain no filled values. This inventory identifies the affected target or recorded future-feeding windows. The type and affected variables are explicit; these are data-quality flags, not independent experimental units.",,,,,
+,,,,,
+Horizon (h),split,origin,target,type,variables
+24,training,2022-04-07 00:00:00,2022-04-08 00:00:00,filled_target,
+24,training,2022-04-07 01:00:00,2022-04-08 01:00:00,filled_target,
+24,training,2022-04-07 02:00:00,2022-04-08 02:00:00,filled_target,
+24,training,2022-04-07 00:00:00,2022-04-08 00:00:00,filled_future_feed_window,"Q-HSW1_GPM,Q-HSW2_GPM,Q-PS_on,Q-TWAS_GPM"
+24,training,2022-04-07 01:00:00,2022-04-08 01:00:00,filled_future_feed_window,"Q-HSW1_GPM,Q-HSW2_GPM,Q-PS_on,Q-TWAS_GPM"
+24,training,2022-04-07 02:00:00,2022-04-08 02:00:00,filled_future_feed_window,"Q-HSW1_GPM,Q-HSW2_GPM,Q-PS_on,Q-TWAS_GPM"
+24,test,2023-02-27 20:00:00,2023-02-28 20:00:00,filled_target,
+24,test,2023-02-27 20:00:00,2023-02-28 20:00:00,filled_future_feed_window,"Q-HSW1_GPM,Q-HSW2_GPM,Q-PS_on,Q-TWAS_GPM"

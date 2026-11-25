@@ -1,0 +1,43 @@
+h,group,mode,dRMSE
+1,Gas history,marginal,9.75027126646389
+1,Gas history,conditional,4.495082406747729
+1,Gas storage,marginal,1.9550397364490557
+1,Gas storage,conditional,0.9528131296633987
+1,Co-substrate feed,marginal,2.039576016965043
+1,Co-substrate feed,conditional,1.2632505361429083
+1,Sludge feed,marginal,0.041529100992139335
+1,Sludge feed,conditional,0.02711425568302701
+1,Digester thermal,marginal,0.3356352697982324
+1,Digester thermal,conditional,0.29422639002743695
+1,Plant hydraulics,marginal,0.03644528346784313
+1,Plant hydraulics,conditional,0.029863798003354702
+1,Calendar,marginal,0.06644640732203762
+1,Calendar,conditional,0.0385530438717705
+6,Gas history,marginal,7.1704094890649035
+6,Gas history,conditional,1.3612256955456252
+6,Gas storage,marginal,0.47194684134624365
+6,Gas storage,conditional,0.15293531192094106
+6,Co-substrate feed,marginal,2.9681900641621106
+6,Co-substrate feed,conditional,2.203156501148487
+6,Sludge feed,marginal,0.06069952864191066
+6,Sludge feed,conditional,0.04177002151728289
+6,Digester thermal,marginal,0.3462635972332464
+6,Digester thermal,conditional,0.414828875298776
+6,Plant hydraulics,marginal,-0.08198765464613303
+6,Plant hydraulics,conditional,-0.05841004126969054
+6,Calendar,marginal,1.3893796742974978
+6,Calendar,conditional,1.2954215916824836
+24,Gas history,marginal,14.080361318539762
+24,Gas history,conditional,1.9295095231953625
+24,Gas storage,marginal,0.5736470261718196
+24,Gas storage,conditional,0.4374849356826161
+24,Co-substrate feed,marginal,1.3073336564446492
+24,Co-substrate feed,conditional,1.3471598089280221
+24,Sludge feed,marginal,0.5221401790840077
+24,Sludge feed,conditional,0.4107506885717697
+24,Digester thermal,marginal,0.14754644713477633
+24,Digester thermal,conditional,0.1558215750810959
+24,Plant hydraulics,marginal,0.23412380314622966
+24,Plant hydraulics,conditional,0.21074969928510684
+24,Calendar,marginal,4.546615583795981
+24,Calendar,conditional,4.505717168981285

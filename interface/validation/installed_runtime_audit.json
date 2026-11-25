@@ -1,0 +1,26 @@
+{
+  "n_origins": 1797,
+  "numpy": "2.2.6",
+  "pandas": "3.0.3",
+  "lightgbm": "4.6.0",
+  "maximum_difference_m3_h": {
+    "1_past": 0.0,
+    "1_feed": 0.0,
+    "2_past": 0.0,
+    "2_feed": 0.0,
+    "3_past": 0.0,
+    "3_feed": 0.0,
+    "4_past": 0.0,
+    "4_feed": 0.0,
+    "6_past": 0.0,
+    "6_feed": 0.0,
+    "9_past": 0.0,
+    "9_feed": 0.0,
+    "12_past": 0.0,
+    "12_feed": 0.0,
+    "18_past": 0.0,
+    "18_feed": 0.0,
+    "24_past": 0.0,
+    "24_feed": 0.0
+  }
+}

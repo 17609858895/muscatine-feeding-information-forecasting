@@ -1,0 +1,30 @@
+Table S7. Computation times and model sizes.,,,,,,
+,,,,,,
+Model,"Tuning time, 3 horizons (s)","Fit + predict, one horizon (s)",Trainable parameters,Type,Training time per seed (s),"Inference (ms per origin, 24 horizons)"
+Cat-Δ [feed],575.906617641449,24.41174515088399,n/a (tree/kernel model),"Tabular, one model per horizon",,
+Cat-Δ [past],389.5424611568451,11.98300782839457,n/a (tree/kernel model),"Tabular, one model per horizon",,
+CatBoost,373.7210984230042,4.38202182451884,n/a (tree/kernel model),"Tabular, one model per horizon",,
+CatBoost +feed,402.630056142807,5.056135098139445,n/a (tree/kernel model),"Tabular, one model per horizon",,
+Extra trees,232.2164759635925,8.032368342081705,n/a (tree/kernel model),"Tabular, one model per horizon",,
+HistGB,450.459897518158,12.62529913584391,n/a (tree/kernel model),"Tabular, one model per horizon",,
+KNN,19.36748194694519,1.982280015945435,n/a (tree/kernel model),"Tabular, one model per horizon",,
+LGB-Δ [feed],352.7543563842773,13.47449413935343,n/a (tree/kernel model),"Tabular, one model per horizon",,
+LGB-Δ [past],327.5144920349121,40.58637364705404,n/a (tree/kernel model),"Tabular, one model per horizon",,
+LightGBM,360.5651559829712,13.28608647982279,n/a (tree/kernel model),"Tabular, one model per horizon",,
+LightGBM +feed,473.0743677616119,23.1500453154246,n/a (tree/kernel model),"Tabular, one model per horizon",,
+Random forest,1486.766707181931,29.89897656440735,n/a (tree/kernel model),"Tabular, one model per horizon",,
+SVR,218.0587222576141,6.656791528065999,n/a (tree/kernel model),"Tabular, one model per horizon",,
+XGBoost,357.590607881546,8.737253824869791,n/a (tree/kernel model),"Tabular, one model per horizon",,
+MLP,,,724376,"Deep, joint 24-horizon output",10.58280358314514,0.0101240993408474
+LSTM,,,55832,"Deep, joint 24-horizon output",147.9761692047119,0.359879776578382
+GRU,,,42264,"Deep, joint 24-horizon output",233.5194083690644,0.4886323104119659
+TCN,,,38328,"Deep, joint 24-horizon output",157.9296793460846,0.3260620182994742
+Transformer,,,80344,"Deep, joint 24-horizon output",1071.357195186615,1.47657389102144
+PatchTST,,,100260,"Deep, joint 24-horizon output",279.4276088237763,0.8874894780587275
+DLinear,,,129072,"Deep, joint 24-horizon output",8.004680728912353,0.0472896684191262
+N-BEATS,,,4353480,"Deep, joint 24-horizon output",51.32841234207153,0.0751541267186983
+iTransformer,,,79320,"Deep, joint 24-horizon output",32.02773156166077,0.0429237028195185
+PG-HQ [past],,,43449,"Deep, joint 24-horizon output",73.58693087100983,0.1203304008437184
+PG-HQ [feed],,,43449,"Deep, joint 24-horizon output",73.94477939605713,0.1179162303009627
+,,,,,,
+"Note. s, seconds; ms, milliseconds.",,,,,,

@@ -1,0 +1,30 @@
+Table S1. Process variables and input definitions.,,,,,,,,,
+,,,,,,,,,
+Variable,Description,Process group,Original unit,SI unit,Median (SI),IQR low (SI),IQR high (SI),Lag bins (h),Role
+Biogas,Total biogas flow (burner + boiler); forecast target and gas-history input,Gas history,CFM,m3 h−1,193.769968544114,141.9065560126856,237.6856548756594,"0, 1-2, 3-5, 6-11, 12-23, 24-47, 48-71, 72-167",Model input (8 lag-bin means); target
+H-Dig1_FT,"Cover height, digester 1",Gas storage,ft,m,1.8103088,1.7788636,1.9090132,"0, 1-2, 3-5, 6-11, 12-23, 24-47, 48-71, 72-167",Model input (8 lag-bin means)
+H-Dig2_FT,"Cover height, digester 2",Gas storage,ft,m,1.3181584,1.2815316,1.3875512,"0, 1-2, 3-5, 6-11, 12-23, 24-47, 48-71, 72-167",Model input (8 lag-bin means)
+Q-HSW1_GPM,"High-strength waste feed flow, line 1",Co-substrate feed,GPM,m3 h−1,1.2745119375,0.2990857708333334,2.2804485625,"0, 1-2, 3-5, 6-11, 12-23, 24-47, 48-71, 72-167",Model input (8 lag-bin means)
+Q-HSW2_GPM,"High-strength waste feed flow, line 2",Co-substrate feed,GPM,m3 h−1,0.5960138541666666,0,1.668195270833333,"0, 1-2, 3-5, 6-11, 12-23, 24-47, 48-71, 72-167",Model input (8 lag-bin means)
+H-HSW_ft,High-strength waste receiving-tank level,Co-substrate feed,ft,m,1.5101316,1.2911836,1.7423892,"0, 1-2, 3-5, 6-11, 12-23, 24-47, 48-71, 72-167",Model input (8 lag-bin means)
+V-HSW-DIG2-yest_gal,High-strength waste volume fed to digester 2 on the previous day,Co-substrate feed,gal,m3,15.4034011015,0,36.6557906104,"0, 1-2, 3-5, 6-11, 12-23, 24-47, 48-71, 72-167",Model input (8 lag-bin means)
+Q-PS_on,Primary-sludge pump on-time fraction,Sludge feed,-,-,0.03333333333333333,0.03333333333333333,0.05,"0, 1-2, 3-5, 6-11, 12-23, 24-47, 48-71, 72-167",Model input (8 lag-bin means)
+Q-TWAS_GPM,Thickened waste activated sludge feed flow,Sludge feed,GPM,m3 h−1,2.270190083333333,0.05095170833333334,2.546260520833333,"0, 1-2, 3-5, 6-11, 12-23, 24-47, 48-71, 72-167",Model input (8 lag-bin means)
+D1_TEMPERATURE,Digester 1 temperature,Digester thermal,degF,degC,35.5874074074074,35.43990740740741,35.71814814814815,"0, 1-2, 3-5, 6-11, 12-23, 24-47, 48-71, 72-167",Model input (8 lag-bin means)
+D2_TEMPERATURE,Digester 2 temperature,Digester thermal,degF,degC,35.59259259259259,35.44444444444444,35.72953703703703,"0, 1-2, 3-5, 6-11, 12-23, 24-47, 48-71, 72-167",Model input (8 lag-bin means)
+Q-influent_MGD,Plant influent flow,Plant hydraulics,MGD,m3 d−1,11826.88264333333,9986.542481666665,13862.80232166666,"0, 1-2, 3-5, 6-11, 12-23, 24-47, 48-71, 72-167",Model input (8 lag-bin means)
+Q-Aeration_SCFM,Aeration air flow,Plant hydraulics,SCFM,m3 h−1,5831.655589344999,4366.188105924999,8324.556895015001,"0, 1-2, 3-5, 6-11, 12-23, 24-47, 48-71, 72-167",Model input (8 lag-bin means)
+Q-RAS_MGD,Total return activated sludge flow,Plant hydraulics,MGD,m3 d−1,16239.4089,10426.28094333333,16848.85991,"0, 1-2, 3-5, 6-11, 12-23, 24-47, 48-71, 72-167",Model input (8 lag-bin means)
+Q-WAS1_MGD,"Waste activated sludge flow, pump 1",Plant hydraulics,MGD,m3 d−1,286.4293566666667,227.1246,378.541,"0, 1-2, 3-5, 6-11, 12-23, 24-47, 48-71, 72-167",Model input (8 lag-bin means)
+Q-WAS2_MGD,"Waste activated sludge flow, pump 2",Plant hydraulics,MGD,m3 d−1,0,0,280.1203400000001,"0, 1-2, 3-5, 6-11, 12-23, 24-47, 48-71, 72-167",Model input (8 lag-bin means)
+V-burner_FT3,Cumulative burner gas counter,-,ft3,-,,,,-,Excluded: Derived from the target; counter saturates at 1e5 ft3 (about 20% of minutes)
+V-Boiler_FT3,Cumulative boiler gas counter,-,ft3,-,,,,-,Excluded: Derived from the target
+Biogas_burner,Biogas flow to burner,-,CFM,-,,,,-,Excluded: Component of the target
+Biogas_boiler,Biogas flow to boiler,-,CFM,-,,,,-,Excluded: Component of the target
+Q-PS_MGD,Primary-sludge flow signal (1-min pump pulses),-,MGD,-,,,,-,Excluded: On/off pulse signal whose hourly mean is not a flow; replaced by the hourly pump on-time fraction (Q-PS_on)
+"Q-RAS1/2/3_MGD, RAS-1/2/3-GATE_MGD",Individual RAS pump and gate flows,-,MGD,-,,,,-,Excluded: Redundant with total RAS flow
+Q-TWAS_on,TWAS pump on-time fraction,-,-,-,,,,-,Excluded: Redundant with TWAS feed flow
+"hod_sin, hod_cos, dow_sin, dow_cos",Hour-of-day and day-of-week of the target time t+h,Calendar,-,-,,,,-,Model input
+"Future HSW, PS, TWAS",Mean recorded feeding at labels t + 1 through t + h; past-derived proxies evaluated separately,Feed schedule,GPM / - / GPM,m3 h−1 / - / m3 h−1,,,,future window,Input in the feed-conditioned regime only
+,,,,,,,,,
+"Note. CFM, cubic feet per minute; SCFM, standard cubic feet per minute; GPM, US gallons per minute; MGD, million US gallons per day; PS, primary sludge; TWAS, thickened waste activated sludge; HSW, high-strength waste; RAS, return activated sludge; IQR, interquartile range.",,,,,,,,,

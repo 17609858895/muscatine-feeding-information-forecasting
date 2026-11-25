@@ -1,0 +1,32 @@
+ACI, alpha = 0.05 (95% one-sided reliability)
+                     firm_fraction                                           shortfall_rate                                            delivered_m3h                               
+strategy Feed-conditioned ensemble Past-only ensemble Persistence Feed-conditioned ensemble Past-only ensemble Persistence Feed-conditioned ensemble Past-only ensemble Persistence
+h                                                                                                                                                                                  
+1                            0.816              0.811       0.750                     0.044              0.045       0.045                   169.548            168.551     155.858
+2                            0.789              0.770       0.759                     0.045              0.045       0.046                   164.001            159.996     157.794
+3                            0.794              0.759       0.739                     0.043              0.043       0.042                   165.042            157.798     153.638
+4                            0.764              0.732       0.712                     0.044              0.044       0.045                   158.847            152.221     148.185
+6                            0.746              0.706       0.690                     0.042              0.042       0.046                   155.261            146.990     143.611
+9                            0.710              0.651       0.625                     0.042              0.046       0.048                   147.939            135.585     130.150
+12                           0.689              0.623       0.546                     0.046              0.046       0.049                   143.684            129.788     113.869
+18                           0.615              0.597       0.441                     0.046              0.048       0.051                   128.355            124.629      92.198
+24                           0.537              0.514       0.375                     0.048              0.047       0.048                   112.292            107.489      78.537
+h=6: feed - past = 8.3 m3/h (199 m3/d); feed - persistence = 11.6 m3/h; relative to past 5.6%
+h=24: feed - past = 4.8 m3/h (115 m3/d); feed - persistence = 33.8 m3/h; relative to past 4.5%
+mean burner flow over 24 h target hours = 133.5 m3/h; boiler = 75.8 m3/h
+alpha=0.02: 24 h firm fraction Persistence=0.238, Past-only ensemble=0.323, Feed-conditioned ensemble=0.274 | shortfall Persistence=0.019, Past-only ensemble=0.022, Feed-conditioned ensemble=0.018
+alpha=0.05: 24 h firm fraction Persistence=0.375, Past-only ensemble=0.514, Feed-conditioned ensemble=0.537 | shortfall Persistence=0.048, Past-only ensemble=0.047, Feed-conditioned ensemble=0.048
+alpha=0.1: 24 h firm fraction Persistence=0.500, Past-only ensemble=0.636, Feed-conditioned ensemble=0.701 | shortfall Persistence=0.102, Past-only ensemble=0.094, Feed-conditioned ensemble=0.092
+Split conformal, alpha = 0.05
+                     firm_fraction                                           shortfall_rate                               
+strategy Feed-conditioned ensemble Past-only ensemble Persistence Feed-conditioned ensemble Past-only ensemble Persistence
+h                                                                                                                         
+1                            0.812              0.808       0.707                     0.043              0.043       0.028
+2                            0.769              0.766       0.739                     0.036              0.042       0.043
+3                            0.753              0.730       0.700                     0.027              0.031       0.032
+4                            0.736              0.707       0.677                     0.031              0.032       0.033
+6                            0.692              0.677       0.656                     0.023              0.032       0.032
+9                            0.712              0.644       0.634                     0.042              0.040       0.045
+12                           0.682              0.603       0.618                     0.037              0.032       0.055
+18                           0.629              0.534       0.525                     0.028              0.022       0.058
+24                           0.632              0.424       0.488                     0.041              0.018       0.079

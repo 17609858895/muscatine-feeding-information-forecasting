@@ -1,0 +1,19 @@
+﻿Quantity,Full record,Training,Test,Working days,Weekends
+Complete SCADA days,346,233,75,246,100
+HSW to digester 1 (m³ d⁻¹),36.3,40.4,27.5,43.8,17.6
+HSW to digester 2 (m³ d⁻¹),21.4,18.3,27.6,25.9,10.5
+Combined HSW (m³ d⁻¹),57.7,58.7,55.1,69.7,28.1
+Days with HSW to digester 1 (%),92,89,97,93,90
+Days with HSW to digester 2 (%),74,62,97,74,74
+TWAS (m³ d⁻¹),41.6,36.1,56.1,41.4,42.1
+PS pump on-time (%),4.3,4.1,4.6,4.5,3.8
+Metered biogas (m³ d⁻¹),"4,593","4,415","4,992","4,881","3,885"
+Laboratory days,348,234,75,248,100
+PS volume (m³ d⁻¹),65.3,65.4,63.6,69.6,54.6
+TWAS volume (m³ d⁻¹),41.6,36.0,56.2,41.6,41.6
+HSW volume (m³ d⁻¹),57.3,58.0,55.1,69.1,28.1
+HSW share of fed volume (%),33.7,35.4,29.3,37.8,23.4
+Hydraulic retention time (d),25.2,26.7,22.3,22.7,31.5
+"HSW COD, median [IQR] (kg m⁻³)",136 [110–186],138 [103–192],127 [115–170],136 [110–186],nan [nan–nan]
+"HSW VS, median [IQR] (%)",6.7 [5.5–7.7],6.8 [5.4–7.8],6.2 [5.5–7.2],6.7 [5.5–7.7],nan [nan–nan]
+HSW COD load (kg d⁻¹),"9,127","9,199","8,480","10,954","4,382"

@@ -1,0 +1,66 @@
+Table S3. Hyperparameter search spaces and training settings.,,,,,
+,,,,,
+Model family,Horizon (h),Search space,Trials,"Validation RMSE, default (m3 h−1)","Validation RMSE, tuned (m3 h−1)"
+"LightGBM-type (LightGBM, LightGBM +feed, LGB-Δ)",all,n_estimators 200-1200 (step 100); learning_rate 0.005-0.1 (log); num_leaves 7-63; min_child_samples 10-150; colsample_bytree 0.3-1.0; reg_lambda 1e-3-20 (log); subsample 0.8 fixed,,,
+"CatBoost-type (CatBoost, CatBoost +feed, Cat-Δ)",all,iterations 300-1200 (step 100); learning_rate 0.01-0.15 (log); depth 3-7; l2_leaf_reg 0.5-30 (log),,,
+XGBoost,all,n_estimators 200-1200; learning_rate 0.005-0.1 (log); max_depth 2-8; min_child_weight 1-50 (log); colsample_bytree 0.3-1.0; reg_lambda 1e-3-20 (log),,,
+Random forest / Extra trees,all,"300 trees; min_samples_leaf 1-40 (log); max_features 0.1-1.0; max_depth {8, 16, None}",,,
+HistGB,all,max_iter 200-1200; learning_rate 0.005-0.1 (log); max_leaf_nodes 7-63; min_samples_leaf 10-150; l2_regularization 1e-3-20 (log),,,
+"SVR (RBF, standardised inputs)",all,C 0.1-300 (log); epsilon 0.1-10 (log); gamma 1e-4-0.05 (log),,,
+KNN (standardised inputs),all,"n_neighbors 5-150 (log); weights {uniform, distance}; p {1, 2}",,,
+"Ridge, AR-Ridge",all,alpha selected by efficient leave-one-out over 13 values in 1e-3-1e3 (log),,,
+"Deep models (MLP, LSTM, GRU, TCN, Transformer, PatchTST, DLinear, N-BEATS, iTransformer)",all,"learning rate {2e-4, 5e-4, 1e-3} at seed 0; AdamW, weight decay 1e-4, batch 128, <= 80 epochs, early stopping patience 12 on validation RMSE; five seeds at the selected rate",,,
+PG-HQ,all,"d_model, heads, dropout and learning rate selected in a separate validation search (d_model 32, learning rate 1e-3); five seeds",,,
+Cat-Δ [feed],1,Best: iterations = 800; learning_rate = 0.07858; depth = 7; l2_leaf_reg = 13.5,15,25.17405846623403,24.89553546994356
+Cat-Δ [feed],24,Best: iterations = 400; learning_rate = 0.02174; depth = 6; l2_leaf_reg = 2.372,15,54.98263712554417,51.679723406364
+Cat-Δ [feed],6,Best: iterations = 600; learning_rate = 0.0463; depth = 7; l2_leaf_reg = 25.93,15,40.44708641281263,38.0744750835316
+Cat-Δ [past],1,Best: iterations = 1200; learning_rate = 0.03; depth = 5; l2_leaf_reg = 5,15,25.10576721708706,25.10576721708706
+Cat-Δ [past],24,Best: iterations = 700; learning_rate = 0.04662; depth = 3; l2_leaf_reg = 6.269,15,61.91351115339042,58.39766779645309
+Cat-Δ [past],6,Best: iterations = 1000; learning_rate = 0.02611; depth = 4; l2_leaf_reg = 26.03,15,41.48513240371305,39.74130306287032
+CatBoost +feed,1,Best: iterations = 600; learning_rate = 0.05471; depth = 3; l2_leaf_reg = 4.043,15,29.33607162236193,27.65496367375774
+CatBoost +feed,24,Best: iterations = 400; learning_rate = 0.05657; depth = 3; l2_leaf_reg = 23.92,15,63.20549736667505,60.58658788400696
+CatBoost +feed,6,Best: iterations = 900; learning_rate = 0.02305; depth = 3; l2_leaf_reg = 23.84,15,44.49506751288281,41.13274380490754
+CatBoost,1,Best: iterations = 400; learning_rate = 0.0766; depth = 3; l2_leaf_reg = 1.853,15,29.05683312731934,27.66754940036434
+CatBoost,24,Best: iterations = 300; learning_rate = 0.09533; depth = 6; l2_leaf_reg = 17.62,15,67.92876731998537,63.24329359127603
+CatBoost,6,Best: iterations = 400; learning_rate = 0.02475; depth = 3; l2_leaf_reg = 1.785,15,45.10983431955303,42.09960250038338
+Extra trees,1,Best: min_samples_leaf = 8; max_features = 0.9607; max_depth = 16,15,29.5366532049532,28.16126731285945
+Extra trees,24,Best: min_samples_leaf = 36; max_features = 0.3897; max_depth = 8,15,68.56558596242722,65.60633707249356
+Extra trees,6,Best: min_samples_leaf = 7; max_features = 0.9631; max_depth = 8,15,42.03606638857377,40.84051271696413
+HistGB,1,Best: max_iter = 400; learning_rate = 0.01574; max_leaf_nodes = 14; min_samples_leaf = 39; l2_regularization = 0.2314,25,27.82566212907642,27.68501877863449
+HistGB,24,Best: max_iter = 800; learning_rate = 0.01509; max_leaf_nodes = 8; min_samples_leaf = 80; l2_regularization = 0.5369,25,67.7893553926069,64.90174921404503
+HistGB,6,Best: max_iter = 400; learning_rate = 0.01557; max_leaf_nodes = 60; min_samples_leaf = 42; l2_regularization = 0.07959,25,44.57316068996916,41.75326592743544
+KNN,1,Best: n_neighbors = 7; weights = distance; p = 1,25,64.23212788680605,63.34504466965325
+KNN,24,Best: n_neighbors = 145; weights = uniform; p = 1,25,104.9460096862903,76.18530780646299
+KNN,6,Best: n_neighbors = 104; weights = distance; p = 2,25,73.06798624852023,66.477190413437
+LGB-Δ [feed],1,Best: n_estimators = 500; learning_rate = 0.01487; num_leaves = 39; min_child_samples = 71; colsample_bytree = 0.9919; reg_lambda = 0.002747,30,25.60602070667736,25.10276699984419
+LGB-Δ [feed],24,Best: n_estimators = 600; learning_rate = 0.005028; num_leaves = 30; min_child_samples = 115; colsample_bytree = 0.8521; reg_lambda = 1.237,30,57.73797586560152,52.80347262305442
+LGB-Δ [feed],6,Best: n_estimators = 900; learning_rate = 0.008609; num_leaves = 30; min_child_samples = 137; colsample_bytree = 0.5982; reg_lambda = 0.03368,30,39.53358008762365,37.94934545687195
+LGB-Δ [past],1,Best: n_estimators = 500; learning_rate = 0.01174; num_leaves = 37; min_child_samples = 42; colsample_bytree = 0.8878; reg_lambda = 0.02317,30,25.94881248405449,25.30894599940986
+LGB-Δ [past],24,Best: n_estimators = 600; learning_rate = 0.07023; num_leaves = 7; min_child_samples = 17; colsample_bytree = 0.8305; reg_lambda = 1.76,30,61.26587394417142,60.01534878758415
+LGB-Δ [past],6,Best: n_estimators = 800; learning_rate = 0.008714; num_leaves = 29; min_child_samples = 98; colsample_bytree = 0.524; reg_lambda = 0.03324,30,40.70952371052912,39.53649371547822
+LightGBM +feed,1,Best: n_estimators = 500; learning_rate = 0.01487; num_leaves = 39; min_child_samples = 71; colsample_bytree = 0.9919; reg_lambda = 0.002747,30,28.59256495841247,27.64343851948264
+LightGBM +feed,24,Best: n_estimators = 1100; learning_rate = 0.005701; num_leaves = 46; min_child_samples = 136; colsample_bytree = 0.7457; reg_lambda = 0.02635,30,63.23349070129231,59.06373673916515
+LightGBM +feed,6,Best: n_estimators = 800; learning_rate = 0.005918; num_leaves = 50; min_child_samples = 20; colsample_bytree = 0.9618; reg_lambda = 0.0222,30,42.05938705040698,39.74838597061826
+LightGBM,1,Best: n_estimators = 500; learning_rate = 0.01487; num_leaves = 39; min_child_samples = 71; colsample_bytree = 0.9919; reg_lambda = 0.002747,30,29.46398513226022,27.9770127270107
+LightGBM,24,Best: n_estimators = 400; learning_rate = 0.0202; num_leaves = 7; min_child_samples = 71; colsample_bytree = 0.5191; reg_lambda = 0.9369,30,66.63039887087349,65.3731489114045
+LightGBM,6,Best: n_estimators = 600; learning_rate = 0.007082; num_leaves = 43; min_child_samples = 86; colsample_bytree = 0.5656; reg_lambda = 0.3039,30,44.51049288833776,42.16305852592997
+Random forest,1,Best: min_samples_leaf = 8; max_features = 0.9607; max_depth = 16,15,29.30647469615695,28.63588358136191
+Random forest,24,Best: min_samples_leaf = 36; max_features = 0.3897; max_depth = 8,15,67.6131141183768,66.44591527887886
+Random forest,6,Best: min_samples_leaf = 16; max_features = 0.576; max_depth = 16,15,42.52488187979368,41.40364932837874
+SVR,1,Best: C = 274.2; epsilon = 0.2313; gamma = 0.000261,20,51.37062372920288,27.89680676136864
+SVR,24,Best: C = 204.4; epsilon = 0.5944; gamma = 0.0003048,20,82.87784773978353,60.93677659709954
+SVR,6,Best: C = 274.2; epsilon = 0.2313; gamma = 0.000261,20,58.90609354637778,38.42756601353382
+XGBoost,1,Best: n_estimators = 500; learning_rate = 0.01487; max_depth = 5; min_child_weight = 5.561; colsample_bytree = 0.9919; reg_lambda = 0.002747,25,28.97391273710744,28.22677515423958
+XGBoost,24,Best: n_estimators = 1000; learning_rate = 0.01282; max_depth = 2; min_child_weight = 1.134; colsample_bytree = 0.8174; reg_lambda = 0.7234,25,67.82282670721465,64.67577832403
+XGBoost,6,Best: n_estimators = 200; learning_rate = 0.04094; max_depth = 3; min_child_weight = 31.15; colsample_bytree = 0.6805; reg_lambda = 0.2569,25,44.00567151249815,42.44700637495306
+MLP,1-24 (joint),"Best: learning rate = 1e-03; 2e-04: 52.82, 5e-04: 50.93, 1e-03: 50.86",3,,50.85965537177
+LSTM,1-24 (joint),"Best: learning rate = 2e-04; 2e-04: 50.08, 5e-04: 50.12, 1e-03: 51.02",3,,50.07854741734
+GRU,1-24 (joint),"Best: learning rate = 5e-04; 2e-04: 50.01, 5e-04: 49.28, 1e-03: 50.46",3,,49.28012994903
+TCN,1-24 (joint),"Best: learning rate = 2e-04; 2e-04: 50.11, 5e-04: 51.04, 1e-03: 51.13",3,,50.11026283701
+Transformer,1-24 (joint),"Best: learning rate = 2e-04; 2e-04: 49.37, 5e-04: 51.27, 1e-03: 50.08",3,,49.37235391084
+PatchTST,1-24 (joint),"Best: learning rate = 2e-04; 2e-04: 51.59, 5e-04: 51.78, 1e-03: 52.36",3,,51.59169251938
+DLinear,1-24 (joint),"Best: learning rate = 2e-04; 2e-04: 54.81, 5e-04: 56.67, 1e-03: 59.78",3,,54.80903639796
+N-BEATS,1-24 (joint),"Best: learning rate = 1e-03; 2e-04: 53.79, 5e-04: 53.38, 1e-03: 52.77",3,,52.76903678997
+iTransformer,1-24 (joint),"Best: learning rate = 2e-04; 2e-04: 51.16, 5e-04: 52.34, 1e-03: 52.60",3,,51.16260074784
+,,,,,
+"Note. RMSE, root-mean-square error.",,,,,

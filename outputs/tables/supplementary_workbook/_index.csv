@@ -1,0 +1,34 @@
+sheet,file,rows
+Table S1 Variables,Table_S1_Variables.csv,30
+Table S2 Evaluation,Table_S2_Evaluation.csv,28
+Table S3 Training,Table_S3_Training.csv,66
+Table S4 Group refits,Table_S4_Group_refits.csv,85
+Table S5 Benchmark,Table_S5_Benchmark.csv,403
+Table S6 DM tests,Table_S6_DM_tests.csv,412
+Table S7 Costs,Table_S7_Costs.csv,30
+Table S8 Interface,Table_S8_Interface.csv,44
+Table S9 Firm supply,Table_S9_Firm_supply.csv,490
+Table S10 Matched models,Table_S10_Matched_models.csv,28
+Table S11 Architectures,Table_S11_Architectures.csv,14
+S3 Ensemble weights,S3_Ensemble_weights.csv,58
+S3 Network selection,S3_Network_selection.csv,10
+S3 Matched MLP selection,S3_Matched_MLP_selection.csv,76
+S5 Paired RMSE,S5_Paired_RMSE.csv,166
+S5 Ablation register,S5_Ablation_register.csv,19
+S5 Group permutation,S5_Group_permutation.csv,544
+S5 HSW lag stability,S5_HSW_lag_stability.csv,108
+S5 Lag-bin sensitivity,S5_Lag_bin_sensitivity.csv,10
+S2 Available feed,S2_Available_feed.csv,58
+S2 Feed scenarios,S2_Feed_scenarios.csv,1283
+S9 Calibration sensitivity,S9_Calibration_sensitivity.csv,706
+S9 Paired uncertainty,S9_Paired_uncertainty.csv,40
+S9 Matched risk,S9_Matched_risk.csv,31
+S9 Shortfall events,S9_Shortfall_events.csv,726
+S9 Event influence,S9_Event_influence.csv,296
+S9 Interval metrics,S9_Interval_metrics.csv,31
+S1 Filled targets,S1_Filled_targets.csv,16
+S1 Fill inventory,S1_Fill_inventory.csv,8
+S8 CSV equivalence,S8_CSV_equivalence.csv,22
+S8 Original CSV diagnosis,S8_Original_CSV_diagnosis.csv,40
+S1 Filled-window inventory,S1_Filled_window_inventory.csv,12
+S5 fold scores,S5_fold_scores.csv,184

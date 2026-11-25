@@ -1,0 +1,110 @@
+{
+  "past_1": {
+    "halfwidth_m3_h": 40.510050745181346,
+    "n": 360,
+    "method": "Independent calibration; finite order statistic",
+    "native_input_decimal_places": 6
+  },
+  "feed_1": {
+    "halfwidth_m3_h": 38.969516178750766,
+    "n": 360,
+    "method": "Independent calibration; finite order statistic",
+    "native_input_decimal_places": 6
+  },
+  "past_2": {
+    "halfwidth_m3_h": 47.07749778504238,
+    "n": 360,
+    "method": "Independent calibration; finite order statistic",
+    "native_input_decimal_places": 6
+  },
+  "feed_2": {
+    "halfwidth_m3_h": 46.25214238692499,
+    "n": 360,
+    "method": "Independent calibration; finite order statistic",
+    "native_input_decimal_places": 6
+  },
+  "past_3": {
+    "halfwidth_m3_h": 51.22581663253724,
+    "n": 360,
+    "method": "Independent calibration; finite order statistic",
+    "native_input_decimal_places": 6
+  },
+  "feed_3": {
+    "halfwidth_m3_h": 50.475062388838786,
+    "n": 360,
+    "method": "Independent calibration; finite order statistic",
+    "native_input_decimal_places": 6
+  },
+  "past_4": {
+    "halfwidth_m3_h": 56.35331202143346,
+    "n": 360,
+    "method": "Independent calibration; finite order statistic",
+    "native_input_decimal_places": 6
+  },
+  "feed_4": {
+    "halfwidth_m3_h": 55.280742221170655,
+    "n": 360,
+    "method": "Independent calibration; finite order statistic",
+    "native_input_decimal_places": 6
+  },
+  "past_6": {
+    "halfwidth_m3_h": 60.87102994005507,
+    "n": 360,
+    "method": "Independent calibration; finite order statistic",
+    "native_input_decimal_places": 6
+  },
+  "feed_6": {
+    "halfwidth_m3_h": 65.12310685577314,
+    "n": 360,
+    "method": "Independent calibration; finite order statistic",
+    "native_input_decimal_places": 6
+  },
+  "past_9": {
+    "halfwidth_m3_h": 71.69195343514826,
+    "n": 360,
+    "method": "Independent calibration; finite order statistic",
+    "native_input_decimal_places": 6
+  },
+  "feed_9": {
+    "halfwidth_m3_h": 63.69915422125587,
+    "n": 360,
+    "method": "Independent calibration; finite order statistic",
+    "native_input_decimal_places": 6
+  },
+  "past_12": {
+    "halfwidth_m3_h": 78.47984176313817,
+    "n": 360,
+    "method": "Independent calibration; finite order statistic",
+    "native_input_decimal_places": 6
+  },
+  "feed_12": {
+    "halfwidth_m3_h": 77.02851044624248,
+    "n": 360,
+    "method": "Independent calibration; finite order statistic",
+    "native_input_decimal_places": 6
+  },
+  "past_18": {
+    "halfwidth_m3_h": 94.15113271001925,
+    "n": 360,
+    "method": "Independent calibration; finite order statistic",
+    "native_input_decimal_places": 6
+  },
+  "feed_18": {
+    "halfwidth_m3_h": 85.72959033793447,
+    "n": 360,
+    "method": "Independent calibration; finite order statistic",
+    "native_input_decimal_places": 6
+  },
+  "past_24": {
+    "halfwidth_m3_h": 106.18276937702545,
+    "n": 360,
+    "method": "Independent calibration; finite order statistic",
+    "native_input_decimal_places": 6
+  },
+  "feed_24": {
+    "halfwidth_m3_h": 90.02061963980894,
+    "n": 360,
+    "method": "Independent calibration; finite order statistic",
+    "native_input_decimal_places": 6
+  }
+}

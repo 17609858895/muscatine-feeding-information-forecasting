@@ -1,0 +1,47 @@
+[
+  {
+    "feature": "Q-HSW2_GPM|L0",
+    "h": 1,
+    "plotted_range_m3h": 15.07943123483987
+  },
+  {
+    "feature": "Q-HSW2_GPM|L0",
+    "h": 6,
+    "plotted_range_m3h": 14.643632293414962
+  },
+  {
+    "feature": "Q-HSW2_GPM|L0",
+    "h": 24,
+    "plotted_range_m3h": 2.6341577850035076
+  },
+  {
+    "feature": "Q-HSW1_GPM|L48-71",
+    "h": 1,
+    "plotted_range_m3h": 0.27135729130200126
+  },
+  {
+    "feature": "Q-HSW1_GPM|L48-71",
+    "h": 6,
+    "plotted_range_m3h": 3.2168376896118653
+  },
+  {
+    "feature": "Q-HSW1_GPM|L48-71",
+    "h": 24,
+    "plotted_range_m3h": 15.770560318858712
+  },
+  {
+    "feature": "H-Dig1_FT|L0",
+    "h": 1,
+    "plotted_range_m3h": 14.94753798717053
+  },
+  {
+    "feature": "H-Dig1_FT|L0",
+    "h": 6,
+    "plotted_range_m3h": 5.4887238394432245
+  },
+  {
+    "feature": "H-Dig1_FT|L0",
+    "h": 24,
+    "plotted_range_m3h": 1.8592013415694368
+  }
+]

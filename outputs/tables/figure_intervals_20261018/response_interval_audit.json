@@ -1,0 +1,88 @@
+{
+  "repeats": 2000,
+  "block_hours": 72,
+  "seed": 20261018,
+  "training_n": 5421,
+  "segments": [
+    {
+      "n": 315,
+      "start": "2022-03-25 00:00:00",
+      "end": "2022-04-07 02:00:00"
+    },
+    {
+      "n": 5106,
+      "start": "2022-04-15 06:00:00",
+      "end": "2022-11-13 23:00:00"
+    }
+  ],
+  "checks": [
+    {
+      "h": 1,
+      "feature": "Q-HSW2_GPM|L0",
+      "complete_replicates": 2000,
+      "max_endpoint_change_m3h": 0.0383672757938989
+    },
+    {
+      "h": 1,
+      "feature": "Q-HSW1_GPM|L48-71",
+      "complete_replicates": 2000,
+      "max_endpoint_change_m3h": 0.00955630257087532
+    },
+    {
+      "h": 1,
+      "feature": "H-Dig1_FT|L0",
+      "complete_replicates": 2000,
+      "max_endpoint_change_m3h": 0.09905772755521679
+    },
+    {
+      "h": 6,
+      "feature": "Q-HSW2_GPM|L0",
+      "complete_replicates": 2000,
+      "max_endpoint_change_m3h": 0.08439364084807571
+    },
+    {
+      "h": 6,
+      "feature": "Q-HSW1_GPM|L48-71",
+      "complete_replicates": 2000,
+      "max_endpoint_change_m3h": 0.0328494154111946
+    },
+    {
+      "h": 6,
+      "feature": "H-Dig1_FT|L0",
+      "complete_replicates": 2000,
+      "max_endpoint_change_m3h": 0.03139219945838615
+    },
+    {
+      "h": 6,
+      "feature": "mixed",
+      "supported": 35,
+      "span_zero": 30
+    },
+    {
+      "h": 24,
+      "feature": "Q-HSW2_GPM|L0",
+      "complete_replicates": 2000,
+      "max_endpoint_change_m3h": 0.04007163407225256
+    },
+    {
+      "h": 24,
+      "feature": "Q-HSW1_GPM|L48-71",
+      "complete_replicates": 2000,
+      "max_endpoint_change_m3h": 0.14245403045133379
+    },
+    {
+      "h": 24,
+      "feature": "H-Dig1_FT|L0",
+      "complete_replicates": 2000,
+      "max_endpoint_change_m3h": 0.02343135983781751
+    },
+    {
+      "h": 24,
+      "feature": "mixed",
+      "supported": 35,
+      "span_zero": 33
+    }
+  ],
+  "point_estimates_unchanged": true,
+  "conditional": "Fixed models, quantile grids, and sample count in each uninterrupted training segment."
+}

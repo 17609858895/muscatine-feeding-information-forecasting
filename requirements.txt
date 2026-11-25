@@ -1,0 +1,25 @@
+# Python 3.12.
+# Versions used for the scientific analyses (Supporting Information, Section S7).
+numpy==2.5.3
+pandas==3.0.3
+scipy==1.18.1
+scikit-learn==1.9.1
+lightgbm==4.7.0
+catboost==1.2.10
+# PyTorch 2.13.0, CPU build, e.g.
+#   pip install torch==2.13.0 --index-url https://download.pytorch.org/whl/cpu
+torch==2.13.0
+matplotlib==3.10.8
+
+# Packages required by individual scripts. These versions were present in the analysis
+# environment but are not listed in Section S7.
+xgboost==3.2.0        # tab_final.py, bench_tab.py, compute_extra.py, compute_supp.py, tune_all.py
+optuna==5.0.0         # tune_all.py, compute_supp.py (exploratory tuning)
+shap==0.52.0          # shap_run.py (TreeSHAP, Fig. S8)
+statsmodels==0.15.0   # revision_feeding_energy.py, figure scripts (ACF/PACF)
+openpyxl==3.1.5       # make_tables.py (legacy workbook export)
+pillow==12.3.0        # figure export checks
+pypdf==6.12.2         # figure export checks
+
+# The local prediction interface has its own, smaller requirements file:
+# interface/requirements.txt (numpy 2.2.6, pandas 3.0.3, lightgbm 4.6.0).

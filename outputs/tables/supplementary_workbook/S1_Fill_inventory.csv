@@ -1,0 +1,8 @@
+S1. Four filled 24 h target values.,,,,,,,,,
+"Native flow is CFM. Hour-start labels are retained; source timezone and daylight-saving conventions are undocumented. The final test target is forward-filled, not interpolated between two endpoints.",,,,,,,,,
+,,,,,,,,,
+target hour,origin,Horizon (h),split,filled native,previous,following,previous native,following native,fill method
+2022-04-08 00:00:00,2022-04-07 00:00:00,24,train,108.87393683534928,2022-04-07 23:00:00,2022-04-08 07:00:00,108.1215900825,114.14036410529413,linear interpolation
+2022-04-08 01:00:00,2022-04-07 01:00:00,24,train,109.62628358819852,2022-04-07 23:00:00,2022-04-08 07:00:00,108.1215900825,114.14036410529413,linear interpolation
+2022-04-08 02:00:00,2022-04-07 02:00:00,24,train,110.3786303410478,2022-04-07 23:00:00,2022-04-08 07:00:00,108.1215900825,114.14036410529413,linear interpolation
+2023-02-28 20:00:00,2023-02-27 20:00:00,24,test,184.93092575333333,2023-02-28 19:00:00,,184.93092575333333,,terminal forward fill

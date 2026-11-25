@@ -1,0 +1,14 @@
+Table S11. Neural forecasting architectures.,,,
+,,,
+,,,
+Model,Input,Structure,Output
+MLP,168 × 16,"Flatten → 256 ReLU, dropout 0.2 → 128 ReLU",24 increments
+LSTM / GRU,168 × 16,"Two recurrent layers, hidden width 64, dropout 0.1; last hidden state",24 increments
+TCN,168 × 16,"Six causal convolutions; 48 channels; kernel 3; dilations 1, 2, 4, 8, 16, 32; GELU, dropout 0.1",24 increments
+Transformer,168 × 16,Dimension 64; learned positions; two encoder layers; four heads; feed-forward width 128; dropout 0.1,Last token → 24 increments
+PatchTST,168 × 16,"Channel-independent shared patches, length 24 and stride 12 (13 patches); dimension 48; two layers; four heads; feed-forward 96; linear reduction 48 → 12",Flatten tokens → 24 increments
+DLinear,168 × 16,"Causal moving mean, width 25; separate flattened linear maps of trend and residual",Sum of two 24-increment heads
+N-BEATS,168 × 16,Three generic residual blocks; two ReLU hidden layers of width 256 per block; backcast and forecast heads,Sum of three 24-increment heads
+iTransformer,16 variable tokens,Each 168-hour variable history → dimension 64; two layers; four heads; feed-forward 128,Gas token → 24 increments
+PG-HQ,48 group–window tokens,Dimension 32; one self-attention and two cross-attention layers; four heads; feed-forward 128; 24 queries; calendar and optional feed embeddings,24 increments plus linear bypass
+Matched MLP,132 or 135 features,"Training-only standardization; hidden widths 128, 64; ReLU; dropout 0.1; selected scalar horizon",One level or increment

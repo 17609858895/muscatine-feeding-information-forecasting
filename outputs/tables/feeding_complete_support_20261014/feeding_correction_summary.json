@@ -1,0 +1,177 @@
+{
+  "protocol": "Original fixed LightGBM models, deterministic features, random matrices, contiguous-episode definition and perturbation settings retained; only scoring support changed.",
+  "n_original": 1797,
+  "n_common": 1791,
+  "first": "2022-12-15 00:00:00",
+  "last": "2023-02-27 14:00:00",
+  "excluded": [
+    "2023-02-27 15:00:00",
+    "2023-02-27 16:00:00",
+    "2023-02-27 17:00:00",
+    "2023-02-27 18:00:00",
+    "2023-02-27 19:00:00",
+    "2023-02-27 20:00:00"
+  ],
+  "preprocessing": "Original H.interpolate(limit=3) preserved. Common support requires finite shifted HSW windows at both h=6 and 24 for every shift from -6 to +6.",
+  "scenario_rows": 1270,
+  "day_ahead_scenario_rows": 635,
+  "missing_corrected_values": 0,
+  "rho_all_24h": 0.2541868672859079,
+  "rho_cancellation_24h": 0.9523407449104044,
+  "cancellation_draws": 40,
+  "baselines": [
+    {
+      "h": 6,
+      "model": "LGB-Δ [past]",
+      "n": 1791,
+      "max_prediction_difference_from_saved": 0.0,
+      "RMSE": 33.02376762300983,
+      "MAE": 24.61268560804765,
+      "R2": 0.8249885667898385
+    },
+    {
+      "h": 6,
+      "model": "LGB-Δ [feed]",
+      "n": 1791,
+      "max_prediction_difference_from_saved": 0.0,
+      "RMSE": 29.167869035931258,
+      "MAE": 21.689166246156002,
+      "R2": 0.8634717307604323
+    },
+    {
+      "h": 24,
+      "model": "LGB-Δ [past]",
+      "n": 1791,
+      "max_prediction_difference_from_saved": 0.0,
+      "RMSE": 58.090255533812844,
+      "MAE": 45.03828981892173,
+      "R2": 0.4671234347955284
+    },
+    {
+      "h": 24,
+      "model": "LGB-Δ [feed]",
+      "n": 1791,
+      "max_prediction_difference_from_saved": 0.0,
+      "RMSE": 46.04576360960751,
+      "MAE": 34.57635602743623,
+      "R2": 0.6651892400440149
+    }
+  ],
+  "summaries": [
+    {
+      "h": 6,
+      "scenario": "hourly_noise",
+      "magnitude": 0.4,
+      "rows": 20,
+      "mean_RMSE": 29.507039550882904,
+      "min_RMSE": 29.13805734028135,
+      "max_RMSE": 29.807823822892836,
+      "mean_WAPE": 0.13408846845087588,
+      "mean_NRMSE": 0.2059935822007446
+    },
+    {
+      "h": 6,
+      "scenario": "sustained_bias",
+      "magnitude": -0.4,
+      "rows": 1,
+      "mean_RMSE": 30.575990185351255,
+      "min_RMSE": 30.575990185351255,
+      "max_RMSE": 30.575990185351255,
+      "mean_WAPE": 0.4,
+      "mean_NRMSE": 0.49472921624155786
+    },
+    {
+      "h": 6,
+      "scenario": "sustained_bias",
+      "magnitude": 0.4,
+      "rows": 1,
+      "mean_RMSE": 31.604045793076974,
+      "min_RMSE": 31.604045793076974,
+      "max_RMSE": 31.604045793076974,
+      "mean_WAPE": 0.3999999999999999,
+      "mean_NRMSE": 0.49472921624155763
+    },
+    {
+      "h": 6,
+      "scenario": "episode_cancellation",
+      "magnitude": 0.5,
+      "rows": 20,
+      "mean_RMSE": 37.719308840272376,
+      "min_RMSE": 30.356524740532056,
+      "max_RMSE": 45.4065705196353,
+      "mean_WAPE": 0.5069870077775074,
+      "mean_NRMSE": 0.8368859455769411
+    },
+    {
+      "h": 6,
+      "scenario": "episode_delay_6h",
+      "magnitude": 0.5,
+      "rows": 20,
+      "mean_RMSE": 32.366422229665446,
+      "min_RMSE": 29.888646957958937,
+      "max_RMSE": 34.91540443689491,
+      "mean_WAPE": 0.13426168193764676,
+      "mean_NRMSE": 0.3353209571289565
+    },
+    {
+      "h": 24,
+      "scenario": "hourly_noise",
+      "magnitude": 0.4,
+      "rows": 20,
+      "mean_RMSE": 46.24718637285903,
+      "min_RMSE": 45.58660712224168,
+      "max_RMSE": 46.87444977746073,
+      "mean_WAPE": 0.07053805937113962,
+      "mean_NRMSE": 0.10358508682768956
+    },
+    {
+      "h": 24,
+      "scenario": "sustained_bias",
+      "magnitude": -0.4,
+      "rows": 1,
+      "mean_RMSE": 52.64957210135993,
+      "min_RMSE": 52.64957210135993,
+      "max_RMSE": 52.64957210135993,
+      "mean_WAPE": 0.4,
+      "mean_NRMSE": 0.47332871277277905
+    },
+    {
+      "h": 24,
+      "scenario": "sustained_bias",
+      "magnitude": 0.4,
+      "rows": 1,
+      "mean_RMSE": 50.77795918964573,
+      "min_RMSE": 50.77795918964573,
+      "max_RMSE": 50.77795918964573,
+      "mean_WAPE": 0.3999999999999999,
+      "mean_NRMSE": 0.473328712772779
+    },
+    {
+      "h": 24,
+      "scenario": "episode_cancellation",
+      "magnitude": 0.5,
+      "rows": 20,
+      "mean_RMSE": 65.04462497821291,
+      "min_RMSE": 48.20142140482758,
+      "max_RMSE": 82.88661732874802,
+      "mean_WAPE": 0.5069634654770189,
+      "mean_NRMSE": 0.7889519954554547
+    },
+    {
+      "h": 24,
+      "scenario": "episode_delay_6h",
+      "magnitude": 0.5,
+      "rows": 20,
+      "mean_RMSE": 48.65305301728505,
+      "min_RMSE": 46.534345740433324,
+      "max_RMSE": 51.27770033254578,
+      "mean_WAPE": 0.08703713869416446,
+      "mean_NRMSE": 0.16767880801554352
+    }
+  ],
+  "max_abs_RMSE_change": 0.3798748770085183,
+  "model_file_sha256": "0439589196bf5614c49985b5f79345ca13e038e030b843a58a9cafb3ac7f08f0",
+  "random_seed": 20261013,
+  "random_draw_count": 20,
+  "episode_selection": "Each contiguous above-threshold run is selected independently with probability 0.25 or 0.50, not an exact fraction of runs."
+}

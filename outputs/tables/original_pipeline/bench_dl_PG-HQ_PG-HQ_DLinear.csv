@@ -1,0 +1,10 @@
+model,h,seed,RMSE,MAE,R2
+"PG-HQ (proposed, past-only)",1,0,18.266157,12.3812685,0.84508437
+"PG-HQ (proposed, past-only)",6,0,21.41381,15.940326,0.7880188
+"PG-HQ (proposed, past-only)",24,0,38.459324,28.143785,0.3273725
+"PG-HQ (proposed, feed-conditioned)",1,0,18.372087,12.689634,0.84328234
+"PG-HQ (proposed, feed-conditioned)",6,0,19.641857,14.4409,0.82164943
+"PG-HQ (proposed, feed-conditioned)",24,0,28.561825,21.328913,0.6290262
+DLinear,1,0,19.49516,14.078545,0.8235367
+DLinear,6,0,25.611504,19.685024,0.69676495
+DLinear,24,0,44.302555,33.867664,0.10745758

@@ -1,0 +1,103 @@
+SCADA complete days: 346 (2022-03-18 to 2023-02-27)
+
+Daily feeding by digester (m3 d-1, mean; SCADA):
+  period     day_type  n_days  HSW1_m3_d_mean  HSW2_m3_d_mean  HSW_m3_d_mean  TWAS_m3_d_mean  gas_m3_d_mean  HSW1_feed_day_frac  HSW2_feed_day_frac  PS_on_frac_mean
+  record     all days     346          36.250          21.449         57.699          41.595       4593.130               0.919               0.737            0.043
+  record working days     246          43.847          25.901         69.748          41.398       4881.087               0.927               0.736            0.045
+  record     weekends     100          17.564          10.496         28.060          42.080       3884.756               0.900               0.740            0.038
+training     all days     233          40.354          18.341         58.695          36.135       4415.133               0.888               0.618            0.041
+training working days     165          48.410          21.623         70.033          35.856       4645.851               0.903               0.618            0.044
+training     weekends      68          20.805          10.379         31.184          36.813       3855.300               0.853               0.618            0.035
+    test     all days      75          27.516          27.563         55.078          56.131       4991.773               0.973               0.973            0.046
+    test working days      53          34.859          34.883         69.742          55.706       5506.851               0.962               0.962            0.047
+    test     weekends      22           9.825           9.926         19.751          57.153       3750.904               1.000               1.000            0.044
+
+HSW hours with flow > 0.23 m3/h: 7603 of 8341 (0.912); median flow while feeding 2.66 m3/h, 90th pct 4.70
+HSW1: hours fed (>0.23) fraction 0.844; working-day mean 1.824 m3/h, weekend 0.732 m3/h
+HSW2: hours fed (>0.23) fraction 0.669; working-day mean 1.081 m3/h, weekend 0.437 m3/h
+Digester temperatures (degF): D1 96.0, D2 96.1 -> 35.5 and 35.6 degC
+
+Laboratory days in record: 348; HSW COD measurements 170, VS measurements 222
+  V_HSW              mean     57.321  median     55.492  IQR    30.624-   86.533 m3/d  n=348
+  V_PS               mean     65.307  median     62.187  IQR    55.903-   66.366 m3/d  n=348
+  V_TWAS             mean     41.620  median     43.203  IQR    23.498-   54.535 m3/d  n=348
+  V_FOG              mean     47.193  median     56.955  IQR     0.000-   77.485 m3/d  n=348
+  V_feed             mean    164.248  median    160.623  IQR   128.904-  192.153 m3/d  n=348
+  HSW_vol_share      mean      0.337  median      0.345  IQR     0.219-    0.459 -  n=348
+  HRT_d              mean     25.238  median     22.911  IQR    19.151-   28.549 d  n=348
+  SRT_d              mean     22.288  median     20.200  IQR    16.900-   25.225 d  n=348
+  HSW_COD_load_kg_d  mean   9127.244  median   7309.380  IQR  3994.192-12690.282 kg COD/d  n=331
+  HSW_VS_load_kg_d   mean   3976.223  median   3523.162  IQR  1813.260- 5611.035 kg VS/d  n=348
+  lab_gas            mean   4589.450  median   4585.290  IQR  3424.186- 5584.309 m3/d  n=348
+  HSW COD (kg/m3): mean 158.0, median 136.5, IQR 110.1-185.8, CV 0.49
+  HSW VS (%): mean 6.99, median 6.70, IQR 5.46-7.70, CV 0.40
+  training: V_HSW 58.05 m3/d, HSW share 0.354, HRT 26.7 d, HSW COD load 9199 kg/d
+  test: V_HSW 55.08 m3/d, HSW share 0.293, HRT 22.3 d, HSW COD load 8480 kg/d
+  Lab HSW volume: working days 69.11 m3/d, weekends 28.09 m3/d
+  Lab vs SCADA daily HSW volume: n=346, r=0.991, lab/SCADA mean ratio 0.993
+
+HSW COD load mean 9127 kg/d -> stoichiometric CH4 potential 3195 m3/d (STP)
+  biogas equivalent at 55% CH4: 5808 m3/d = 126.5% of mean metered biogas (4593 m3/d)
+  biogas equivalent at 60% CH4: 5324 m3/d = 115.9% of mean metered biogas (4593 m3/d)
+  biogas equivalent at 65% CH4: 4915 m3/d = 107.0% of mean metered biogas (4593 m3/d)
+  per m3 HSW: 55.3 m3 CH4 = 92.2 m3 biogas at 60% CH4 (mean COD)
+
+Daily association of metered biogas with HSW volume (sum of lag coefficients, HAC 7-day):
+                             spec  n_days  sum_HSW_coef_m3_per_m3  se_HAC  ci_low  ci_high  mean_HSW_m3_d  mean_gas_m3_d  implied_share    r2
+                        HSW d0+d1     344                  34.635   3.047  28.664   40.607         57.745       4589.674          0.436 0.449
+                     HSW d0+d1+d2     342                  35.220   3.583  28.197   42.242         57.904       4589.164          0.444 0.450
+                       HSW d0..d3     340                  34.321   4.414  25.671   42.972         57.933       4588.725          0.433 0.452
+       HSW d0+d1 + sludge volumes     344                  35.921   2.907  30.223   41.618         57.745       4589.674          0.452 0.471
+HSW d0+d1 + sludge + cover change     344                  35.104   2.856  29.507   40.701         57.745       4589.674          0.442 0.477
+Laboratory record 2020-01-02..2023-03-31 (n=1101): HSW d0+d1 coefficient 38.1 m3 biogas per m3 HSW (95% CI 34.5 to 41.7); implied share 42.3%
+
+Detrended HSW->biogas cross-correlation: peak 0.60 at 2 h; half of peak by 30 h; zero crossing at 52 h; minimum -0.37 at 82 h
+  HSW1: peak 0.47 at 2 h
+  HSW2: peak 0.49 at 2 h
+
+Flared gas: burner share 0.745; mean burner flow 142.7 m3/h; 1.25 million m3/yr (annualized)
+  fuel energy at 60% CH4: 852 kW = 7461 MWh/yr (range 55-65%: 6839-8083)
+  electricity at 30-35% efficiency: 234-323 kW, 2052-2829 MWh/yr; central (60%, 35%) 2611 MWh/yr
+  gross electricity value: 147-307 kUSD/yr; central 60%/35%: 187-283 kUSD/yr
+  day-ahead ensemble RMSE reduction: 12.0 m3/h -> 71 kW fuel, 25 kW electric
+  6 h matched-risk commitment gain (4.34 pp of mean outcome 209.3): 9.1 m3/h -> 54 kW fuel, 19 kW electric
+
+Table S23
+                                   Full record       Training           Test   Working days       Weekends
+Quantity                                                                                                  
+Complete SCADA days                        346            233             75            246            100
+HSW to digester 1 (m³ d⁻¹)                36.3           40.4           27.5           43.8           17.6
+HSW to digester 2 (m³ d⁻¹)                21.4           18.3           27.6           25.9           10.5
+Combined HSW (m³ d⁻¹)                     57.7           58.7           55.1           69.7           28.1
+Days with HSW to digester 1 (%)             92             89             97             93             90
+Days with HSW to digester 2 (%)             74             62             97             74             74
+TWAS (m³ d⁻¹)                             41.6           36.1           56.1           41.4           42.1
+PS pump on-time (%)                        4.3            4.1            4.6            4.5            3.8
+Metered biogas (m³ d⁻¹)                  4,593          4,415          4,992          4,881          3,885
+Laboratory days                            348            234             75            248            100
+PS volume (m³ d⁻¹)                        65.3           65.4           63.6           69.6           54.6
+TWAS volume (m³ d⁻¹)                      41.6           36.0           56.2           41.6           41.6
+HSW volume (m³ d⁻¹)                       57.3           58.0           55.1           69.1           28.1
+HSW share of fed volume (%)               33.7           35.4           29.3           37.8           23.4
+Hydraulic retention time (d)              25.2           26.7           22.3           22.7           31.5
+HSW COD, median [IQR] (kg m⁻³)   136 [110–186]  138 [103–192]  127 [115–170]  136 [110–186]  nan [nan–nan]
+HSW VS, median [IQR] (%)         6.7 [5.5–7.7]  6.8 [5.4–7.8]  6.2 [5.5–7.2]  6.7 [5.5–7.7]  nan [nan–nan]
+HSW COD load (kg d⁻¹)                    9,127          9,199          8,480         10,954          4,382
+
+Table S24
+                                          Specification  Days Summed HSW coefficient (m³ m⁻³) Implied share (%)   R²
+                                              HSW d0+d1   344               34.6 [28.7, 40.6]                44 0.45
+                                           HSW d0+d1+d2   342               35.2 [28.2, 42.2]                44 0.45
+                                             HSW d0..d3   340               34.3 [25.7, 43.0]                43 0.45
+                             HSW d0+d1 + sludge volumes   344               35.9 [30.2, 41.6]                45 0.47
+                      HSW d0+d1 + sludge + cover change   344               35.1 [29.5, 40.7]                44 0.48
+Laboratory record 2020–2023, HSW d0+d1 + sludge volumes  1101               38.1 [34.5, 41.7]                42 0.49
+
+Table S25
+ ch4_fraction  electrical_efficiency  Iowa commercial 2025  Iowa industrial 2025  fuel_MWh_yr  electric_kW  electric_MWh_yr
+          0.6                    0.3                 222.4                 146.7       6839.1        234.2           2051.7
+          0.6                    0.4                 259.5                 171.1       6839.1        273.3           2393.7
+          0.6                    0.3                 242.6                 160.0       7460.8        255.5           2238.3
+          0.6                    0.4                 283.1                 186.7       7460.8        298.1           2611.3
+          0.6                    0.3                 262.8                 173.4       8082.6        276.8           2424.8
+          0.6                    0.4                 306.7                 202.3       8082.6        322.9           2828.9

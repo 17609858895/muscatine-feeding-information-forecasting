@@ -1,0 +1,157 @@
+horizon_h,feature,description,grid_point,input_value,input_unit,training_count_in_bin,ale_m3_h,lower_m3_h,upper_m3_h
+1,H-Dig1_FT|L0,"Cover height, digester 1, current hour",0,0.036068,m,,-11.473992,-12.915586,-10.165641
+1,H-Dig1_FT|L0,"Cover height, digester 1, current hour",1,1.746860,m,270.000000,-10.307203,-11.686841,-9.013481
+1,H-Dig1_FT|L0,"Cover height, digester 1, current hour",2,1.759560,m,271.000000,-3.943061,-5.315377,-2.709933
+1,H-Dig1_FT|L0,"Cover height, digester 1, current hour",3,1.766519,m,271.000000,-1.212123,-2.699332,0.095928
+1,H-Dig1_FT|L0,"Cover height, digester 1, current hour",4,1.773377,m,272.000000,-0.483952,-1.931777,0.796843
+1,H-Dig1_FT|L0,"Cover height, digester 1, current hour",5,1.778813,m,271.000000,-1.059726,-2.061008,-0.149553
+1,H-Dig1_FT|L0,"Cover height, digester 1, current hour",6,1.784096,m,270.000000,-2.509359,-3.346584,-1.718237
+1,H-Dig1_FT|L0,"Cover height, digester 1, current hour",7,1.789532,m,269.000000,-4.136381,-4.871289,-3.394072
+1,H-Dig1_FT|L0,"Cover height, digester 1, current hour",8,1.795374,m,274.000000,-4.486669,-5.248546,-3.731843
+1,H-Dig1_FT|L0,"Cover height, digester 1, current hour",9,1.802994,m,271.000000,-3.341792,-4.122489,-2.562683
+1,H-Dig1_FT|L0,"Cover height, digester 1, current hour",10,1.813611,m,270.000000,1.087521,0.322999,1.890589
+1,H-Dig1_FT|L0,"Cover height, digester 1, current hour",11,1.828546,m,272.000000,2.549835,1.734134,3.427240
+1,H-Dig1_FT|L0,"Cover height, digester 1, current hour",12,1.847291,m,270.000000,3.341096,2.507373,4.216765
+1,H-Dig1_FT|L0,"Cover height, digester 1, current hour",13,1.871116,m,272.000000,3.570602,2.748053,4.444093
+1,H-Dig1_FT|L0,"Cover height, digester 1, current hour",14,1.889100,m,272.000000,3.719804,2.887083,4.605761
+1,H-Dig1_FT|L0,"Cover height, digester 1, current hour",15,1.908962,m,270.000000,3.879699,3.044421,4.761847
+1,H-Dig1_FT|L0,"Cover height, digester 1, current hour",16,1.931670,m,271.000000,3.915933,3.074788,4.800268
+1,H-Dig1_FT|L0,"Cover height, digester 1, current hour",17,1.959864,m,272.000000,3.922148,3.083297,4.808843
+1,H-Dig1_FT|L0,"Cover height, digester 1, current hour",18,2.002434,m,269.000000,4.076361,3.232402,4.967801
+1,H-Dig1_FT|L0,"Cover height, digester 1, current hour",19,2.043633,m,272.000000,4.640335,3.682837,5.655090
+1,H-Dig1_FT|L0,"Cover height, digester 1, current hour",20,2.202434,m,272.000000,4.925263,3.975465,5.929441
+1,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",0,0.000000,m3 h-1,,-0.121494,-0.274122,0.022733
+1,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",1,0.282723,m3 h-1,814.000000,-0.019028,-0.158141,0.121438
+1,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",2,0.298923,m3 h-1,270.000000,0.149863,0.065124,0.250724
+1,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",3,0.447204,m3 h-1,271.000000,0.127195,0.044166,0.224279
+1,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",4,0.638980,m3 h-1,271.000000,0.013663,-0.049480,0.070747
+1,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",5,0.816018,m3 h-1,272.000000,0.020655,-0.031774,0.069074
+1,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",6,1.052187,m3 h-1,270.000000,0.010947,-0.039541,0.057242
+1,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",7,1.266465,m3 h-1,271.000000,0.023086,-0.027089,0.069836
+1,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",8,1.329754,m3 h-1,271.000000,0.023086,-0.027089,0.069836
+1,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",9,1.556393,m3 h-1,272.000000,0.069455,0.020072,0.115501
+1,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",10,1.758869,m3 h-1,271.000000,-0.022627,-0.070445,0.027913
+1,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",11,1.956376,m3 h-1,270.000000,-0.038001,-0.086880,0.013478
+1,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",12,2.119526,m3 h-1,271.000000,-0.043070,-0.093614,0.009234
+1,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",13,2.523434,m3 h-1,271.000000,-0.043070,-0.093614,0.009234
+1,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",14,3.011786,m3 h-1,271.000000,-0.043070,-0.093614,0.009234
+1,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",15,3.741509,m3 h-1,272.000000,-0.043070,-0.093614,0.009234
+1,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",16,4.185865,m3 h-1,270.000000,-0.043070,-0.093614,0.009234
+1,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",17,4.621625,m3 h-1,271.000000,0.038927,-0.035946,0.133003
+1,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",18,6.097467,m3 h-1,272.000000,0.038927,-0.035946,0.133003
+1,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",0,0.000000,m3 h-1,,-3.605536,-4.431422,-2.819478
+1,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",1,0.297572,m3 h-1,2710.000000,-3.227632,-4.043872,-2.437062
+1,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",2,0.299351,m3 h-1,268.000000,-3.026818,-3.851914,-2.226461
+1,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",3,0.502136,m3 h-1,275.000000,-2.378285,-3.239518,-1.558890
+1,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",4,0.638789,m3 h-1,269.000000,-1.995741,-2.828645,-1.194528
+1,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",5,0.840287,m3 h-1,273.000000,-1.326749,-2.191716,-0.467425
+1,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",6,1.326372,m3 h-1,270.000000,4.116768,3.060998,5.277772
+1,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",7,1.376870,m3 h-1,271.000000,7.033072,5.909059,8.309791
+1,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",8,1.940518,m3 h-1,271.000000,7.602601,6.453872,8.881800
+1,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",9,2.015432,m3 h-1,271.000000,8.393850,7.253730,9.708653
+1,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",10,2.929420,m3 h-1,270.000000,11.473895,10.307048,12.803976
+1,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",11,9.493749,m3 h-1,273.000000,11.689569,10.522495,13.033743
+6,H-Dig1_FT|L0,"Cover height, digester 1, current hour",0,0.036068,m,,-3.648601,-4.180717,-3.078283
+6,H-Dig1_FT|L0,"Cover height, digester 1, current hour",1,1.746860,m,270.000000,-3.014163,-3.481412,-2.584571
+6,H-Dig1_FT|L0,"Cover height, digester 1, current hour",2,1.759560,m,271.000000,-2.857695,-3.324797,-2.428108
+6,H-Dig1_FT|L0,"Cover height, digester 1, current hour",3,1.766519,m,271.000000,-2.879949,-3.345979,-2.451942
+6,H-Dig1_FT|L0,"Cover height, digester 1, current hour",4,1.773377,m,272.000000,-2.726339,-3.193521,-2.290726
+6,H-Dig1_FT|L0,"Cover height, digester 1, current hour",5,1.778813,m,271.000000,-2.483460,-2.941035,-2.055871
+6,H-Dig1_FT|L0,"Cover height, digester 1, current hour",6,1.784096,m,270.000000,-2.053608,-2.514880,-1.631532
+6,H-Dig1_FT|L0,"Cover height, digester 1, current hour",7,1.789532,m,269.000000,-1.791412,-2.244780,-1.370003
+6,H-Dig1_FT|L0,"Cover height, digester 1, current hour",8,1.795374,m,274.000000,-1.730543,-2.183257,-1.303265
+6,H-Dig1_FT|L0,"Cover height, digester 1, current hour",9,1.802994,m,271.000000,-0.348829,-0.749808,0.041853
+6,H-Dig1_FT|L0,"Cover height, digester 1, current hour",10,1.813611,m,270.000000,1.389259,0.947761,1.818033
+6,H-Dig1_FT|L0,"Cover height, digester 1, current hour",11,1.828546,m,272.000000,1.382497,0.942727,1.812815
+6,H-Dig1_FT|L0,"Cover height, digester 1, current hour",12,1.847291,m,270.000000,1.879525,1.449308,2.321080
+6,H-Dig1_FT|L0,"Cover height, digester 1, current hour",13,1.871116,m,272.000000,1.895643,1.466249,2.333909
+6,H-Dig1_FT|L0,"Cover height, digester 1, current hour",14,1.889100,m,272.000000,1.946054,1.520410,2.377917
+6,H-Dig1_FT|L0,"Cover height, digester 1, current hour",15,1.908962,m,270.000000,2.078709,1.660941,2.512266
+6,H-Dig1_FT|L0,"Cover height, digester 1, current hour",16,1.931670,m,271.000000,2.471138,2.053050,2.897642
+6,H-Dig1_FT|L0,"Cover height, digester 1, current hour",17,1.959864,m,272.000000,2.474561,2.056400,2.899286
+6,H-Dig1_FT|L0,"Cover height, digester 1, current hour",18,2.002434,m,269.000000,2.469994,2.050211,2.896256
+6,H-Dig1_FT|L0,"Cover height, digester 1, current hour",19,2.043633,m,272.000000,2.469994,2.050211,2.896256
+6,H-Dig1_FT|L0,"Cover height, digester 1, current hour",20,2.202434,m,272.000000,2.469994,2.050211,2.896256
+6,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",0,0.000000,m3 h-1,,2.112307,1.702843,2.537744
+6,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",1,0.282723,m3 h-1,814.000000,2.068422,1.668218,2.491223
+6,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",2,0.298923,m3 h-1,270.000000,1.388640,1.056073,1.773181
+6,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",3,0.447204,m3 h-1,271.000000,0.172092,-0.084365,0.419297
+6,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",4,0.638980,m3 h-1,271.000000,0.075891,-0.183475,0.324454
+6,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",5,0.816018,m3 h-1,272.000000,0.015926,-0.231406,0.251233
+6,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",6,1.052187,m3 h-1,270.000000,-0.133165,-0.381178,0.096189
+6,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",7,1.266465,m3 h-1,271.000000,-0.142977,-0.393405,0.089753
+6,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",8,1.329754,m3 h-1,271.000000,-0.277724,-0.527524,-0.056020
+6,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",9,1.556393,m3 h-1,272.000000,-0.533546,-0.778037,-0.299514
+6,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",10,1.758869,m3 h-1,271.000000,-0.636165,-0.882059,-0.406523
+6,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",11,1.956376,m3 h-1,270.000000,-0.586466,-0.835946,-0.361105
+6,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",12,2.119526,m3 h-1,271.000000,-0.823762,-1.090474,-0.582842
+6,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",13,2.523434,m3 h-1,271.000000,-1.038556,-1.329516,-0.766929
+6,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",14,3.011786,m3 h-1,271.000000,-1.022238,-1.311964,-0.750492
+6,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",15,3.741509,m3 h-1,272.000000,-1.061905,-1.357206,-0.789319
+6,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",16,4.185865,m3 h-1,270.000000,-1.104531,-1.402528,-0.827575
+6,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",17,4.621625,m3 h-1,271.000000,-0.998051,-1.302785,-0.716593
+6,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",18,6.097467,m3 h-1,272.000000,-1.194709,-1.502278,-0.915451
+6,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",0,0.000000,m3 h-1,,-3.853127,-4.824172,-2.964692
+6,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",1,0.297572,m3 h-1,2710.000000,-3.839596,-4.807127,-2.955211
+6,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",2,0.299351,m3 h-1,268.000000,-3.659692,-4.628087,-2.782175
+6,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",3,0.502136,m3 h-1,275.000000,-2.143218,-3.078887,-1.162808
+6,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",4,0.638789,m3 h-1,269.000000,-0.139214,-1.102331,0.831755
+6,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",5,0.840287,m3 h-1,273.000000,1.269262,0.297514,2.350358
+6,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",6,1.326372,m3 h-1,270.000000,4.927884,3.888127,6.087356
+6,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",7,1.376870,m3 h-1,271.000000,6.294145,5.253829,7.459381
+6,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",8,1.940518,m3 h-1,271.000000,7.465966,6.401363,8.687473
+6,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",9,2.015432,m3 h-1,271.000000,10.117192,8.897038,11.489610
+6,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",10,2.929420,m3 h-1,270.000000,10.790505,9.575089,12.143966
+6,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",11,9.493749,m3 h-1,273.000000,10.839012,9.626859,12.185170
+24,H-Dig1_FT|L0,"Cover height, digester 1, current hour",0,0.036068,m,,-0.319823,-0.672784,0.067809
+24,H-Dig1_FT|L0,"Cover height, digester 1, current hour",1,1.746860,m,270.000000,-1.384363,-1.636377,-1.152713
+24,H-Dig1_FT|L0,"Cover height, digester 1, current hour",2,1.759560,m,271.000000,-1.180913,-1.425111,-0.957038
+24,H-Dig1_FT|L0,"Cover height, digester 1, current hour",3,1.766519,m,271.000000,-1.094999,-1.321684,-0.893257
+24,H-Dig1_FT|L0,"Cover height, digester 1, current hour",4,1.773377,m,272.000000,-0.412617,-0.584612,-0.268372
+24,H-Dig1_FT|L0,"Cover height, digester 1, current hour",5,1.778813,m,271.000000,-0.314150,-0.486980,-0.158081
+24,H-Dig1_FT|L0,"Cover height, digester 1, current hour",6,1.784096,m,270.000000,-0.253912,-0.418305,-0.105043
+24,H-Dig1_FT|L0,"Cover height, digester 1, current hour",7,1.789532,m,269.000000,-0.188620,-0.353372,-0.043146
+24,H-Dig1_FT|L0,"Cover height, digester 1, current hour",8,1.795374,m,274.000000,-0.174808,-0.340186,-0.030258
+24,H-Dig1_FT|L0,"Cover height, digester 1, current hour",9,1.802994,m,271.000000,0.009065,-0.135443,0.140321
+24,H-Dig1_FT|L0,"Cover height, digester 1, current hour",10,1.813611,m,270.000000,0.474838,0.353032,0.606288
+24,H-Dig1_FT|L0,"Cover height, digester 1, current hour",11,1.828546,m,272.000000,0.474838,0.353032,0.606288
+24,H-Dig1_FT|L0,"Cover height, digester 1, current hour",12,1.847291,m,270.000000,0.451068,0.327131,0.592734
+24,H-Dig1_FT|L0,"Cover height, digester 1, current hour",13,1.871116,m,272.000000,0.451068,0.327131,0.592734
+24,H-Dig1_FT|L0,"Cover height, digester 1, current hour",14,1.889100,m,272.000000,0.448157,0.321699,0.592056
+24,H-Dig1_FT|L0,"Cover height, digester 1, current hour",15,1.908962,m,270.000000,0.448157,0.321699,0.592056
+24,H-Dig1_FT|L0,"Cover height, digester 1, current hour",16,1.931670,m,271.000000,0.448157,0.321699,0.592056
+24,H-Dig1_FT|L0,"Cover height, digester 1, current hour",17,1.959864,m,272.000000,0.448157,0.321699,0.592056
+24,H-Dig1_FT|L0,"Cover height, digester 1, current hour",18,2.002434,m,269.000000,0.448157,0.321699,0.592056
+24,H-Dig1_FT|L0,"Cover height, digester 1, current hour",19,2.043633,m,272.000000,0.448157,0.321699,0.592056
+24,H-Dig1_FT|L0,"Cover height, digester 1, current hour",20,2.202434,m,272.000000,1.219094,1.073789,1.377127
+24,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",0,0.000000,m3 h-1,,11.725797,8.728255,14.236341
+24,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",1,0.282723,m3 h-1,814.000000,11.317633,8.349851,13.835170
+24,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",2,0.298923,m3 h-1,270.000000,1.254914,-0.169215,2.779897
+24,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",3,0.447204,m3 h-1,271.000000,-0.556833,-1.722014,0.575813
+24,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",4,0.638980,m3 h-1,271.000000,-0.733950,-1.899698,0.394606
+24,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",5,0.816018,m3 h-1,272.000000,-2.160096,-3.315133,-1.065212
+24,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",6,1.052187,m3 h-1,270.000000,-2.534685,-3.683042,-1.453910
+24,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",7,1.266465,m3 h-1,271.000000,-2.491906,-3.684784,-1.397278
+24,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",8,1.329754,m3 h-1,271.000000,-2.508245,-3.695496,-1.420615
+24,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",9,1.556393,m3 h-1,272.000000,-2.520414,-3.708551,-1.422372
+24,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",10,1.758869,m3 h-1,271.000000,-2.700498,-3.913295,-1.597981
+24,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",11,1.956376,m3 h-1,270.000000,-2.729840,-3.938991,-1.629887
+24,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",12,2.119526,m3 h-1,271.000000,-2.840013,-4.035359,-1.744538
+24,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",13,2.523434,m3 h-1,271.000000,-2.840013,-4.035359,-1.744538
+24,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",14,3.011786,m3 h-1,271.000000,-2.852015,-4.049786,-1.755060
+24,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",15,3.741509,m3 h-1,272.000000,-3.895052,-5.143608,-2.756894
+24,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",16,4.185865,m3 h-1,270.000000,-4.003797,-5.248316,-2.864395
+24,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",17,4.621625,m3 h-1,271.000000,-4.044764,-5.288676,-2.898807
+24,Q-HSW1_GPM|L48-71,"HSW to digester 1, mean over 48-71 h before origin",18,6.097467,m3 h-1,272.000000,-4.154266,-5.398178,-3.008310
+24,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",0,0.000000,m3 h-1,,-0.662643,-0.920539,-0.442538
+24,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",1,0.297572,m3 h-1,2710.000000,-0.617164,-0.874265,-0.398063
+24,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",2,0.299351,m3 h-1,268.000000,-0.591351,-0.851435,-0.362343
+24,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",3,0.502136,m3 h-1,275.000000,-0.532057,-0.794429,-0.301911
+24,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",4,0.638789,m3 h-1,269.000000,-0.049878,-0.297041,0.195994
+24,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",5,0.840287,m3 h-1,273.000000,0.874860,0.574702,1.213128
+24,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",6,1.326372,m3 h-1,270.000000,1.437539,1.095408,1.835371
+24,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",7,1.376870,m3 h-1,271.000000,1.971515,1.552684,2.457962
+24,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",8,1.940518,m3 h-1,271.000000,1.110414,0.627130,1.665845
+24,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",9,2.015432,m3 h-1,271.000000,0.986528,0.449092,1.548252
+24,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",10,2.929420,m3 h-1,270.000000,0.985797,0.443367,1.565757
+24,Q-HSW2_GPM|L0,"HSW to digester 2, current hour",11,9.493749,m3 h-1,273.000000,1.022310,0.478867,1.599855

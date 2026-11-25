@@ -1,0 +1,20 @@
+from context import *
+import json
+M=pd.read_csv(OUT/'all_benchmark_metrics.csv');P=pd.read_csv(OUT/'paired_RMSE_uncertainty.csv');F=pd.read_csv(OUT/'firm_supply_independent.csv')
+A=pd.read_csv(OUT/'attribution_consistency.csv');L=pd.read_csv(OUT/'loco_paired_uncertainty.csv')
+def show(name,d):print('\n'+name+'\n'+d.to_string(index=False))
+show('Point and paired uncertainty',P[(P.h.isin([1,6,24]))&(P.block_h==72)])
+show('Commitment primary',F[(F.h==24)&F.alpha.isin([.01,.02,.05,.1])&(F.method=='ACI')])
+for name in ['commitment_paired_uncertainty.csv','commitment_matched_risk.csv']:
+    d=pd.read_csv(OUT/name);show(name,d[(d.h==24)&(d.block_h==72)])
+D=pd.read_csv(OUT/'calibration_sensitivity.csv')
+show('Boundary comparison',D[(D.h==24)&D.alpha.isin([.01,.02,.05])&(D.gamma==.005)&(D.history=='expanding')&(D.timing=='after')&(D.calibration=='independent')&D.strategy.isin(['Past-only ensemble','Feed-conditioned ensemble'])])
+show('Gas mapping',A[(A.group=='Gas history')&(A.window=='all')&(A.regime=='past')&A.h.isin([1,6,24])])
+show('Group mapping',A[(A.window=='all')&(A.mapping=='complete')&A.h.isin([1,6,24])])
+show('Lag windows',pd.read_csv(OUT/'HSW_lag_stability.csv'))
+show('Bin sensitivity',pd.read_csv(OUT/'lag_bin_sensitivity.csv'))
+Q=pd.read_csv(OUT/'HAC_benchmark_tests.csv');show('HAC counts',Q.groupby(['h','bandwidth_h']).apply(lambda x:pd.Series({'comparisons':len(x),'wins_Holm':int(((x.p_Holm<.05)&(x.statistic<0)).sum())}),include_groups=False).reset_index())
+show('Intervals',pd.read_csv(OUT/'intervals_independent.csv'))
+R=pd.read_csv(OUT/'feeding_perturbations.csv');show('24 h perturbations',R[(R.h==24)&((R.scenario!='hourly_noise')|((R.shift_h==0)&(R.magnitude==.4)))].groupby(['scenario','magnitude'])[['RMSE','R2','window_WAPE','window_NRMSE']].mean().reset_index())
+E=pd.read_csv(OUT/'commitment_event_influence.csv');show('Event influence',E[E.h==24].groupby('alpha').agg(events=('event_h','count'),min_without=('score_without_event_delta','min'),max_without=('score_without_event_delta','max')).reset_index())
+print('Peak ensemble skill gain over best component',max(M[(M.model=='PG-HQ ensemble [past]')].set_index('h').Skill-pd.concat([M[M.model==name].set_index('h').Skill for name in ['LGB-Δ [past]','Cat-Δ [past]','PG-HQ [past]']],axis=1).max(axis=1)))

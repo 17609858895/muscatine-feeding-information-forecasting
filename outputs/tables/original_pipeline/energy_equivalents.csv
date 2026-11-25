@@ -1,0 +1,14 @@
+quantity,flow_m3_h,source,kW_low,kW_central,kW_high,burner_share_of_integrated_flow,flared_volume_m3,flared_energy_MWh_central
+"Mean metered biogas, all complete-routing hours",191.6980,"SCADA, 8341 h",1048.4813,1143.7978,1239.1143,0.7446,1190612.0015,7103.9849
+"Mean burner (flare) flow, all complete-routing hours",142.7421,SCADA,780.7201,851.6946,922.6692,,,
+"Mean boiler flow, all complete-routing hours",48.9558,SCADA,267.7612,292.1032,316.4451,,,
+"Mean metered biogas, test-period window",207.9906,SCADA,1137.5928,1241.0103,1344.4278,,,
+"Day-ahead RMSE, past-only ensemble",57.4800,manuscript result,314.3837,342.9640,371.5443,,,
+"Day-ahead RMSE, feed-conditioned ensemble",45.5200,manuscript result,248.9691,271.6027,294.2362,,,
+"Day-ahead RMSE reduction, ensemble",11.9600,manuscript result,65.4146,71.3613,77.3081,,,
+"7-day mean flow, minimum",90.0000,manuscript result,492.2500,537.0000,581.7500,,,
+"7-day mean flow, maximum",290.0000,manuscript result,1586.1389,1730.3333,1874.5278,,,
+"Mean outcome, commitment test origins",209.3000,manuscript result,1144.7547,1248.8233,1352.8919,,,
+"Mean fulfilled commitment, persistence, alpha=0.05",81.8000,manuscript result,447.4006,488.0733,528.7461,,,
+"Mean fulfilled commitment, past-only ensemble, alpha=0.05",101.0000,manuscript result,552.4139,602.6333,652.8528,,,
+"Mean fulfilled commitment, feed-conditioned ensemble, alpha=0.05",108.9000,manuscript result,595.6225,649.7700,703.9175,,,

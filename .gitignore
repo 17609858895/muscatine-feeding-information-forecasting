@@ -1,0 +1,31 @@
+# Python and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+catboost_info/
+
+# Raw data are not redistributed; download them into data/ (see data/README.md)
+data/*
+!data/README.md
+
+# Working directory for regenerated intermediate results (see results/README.md)
+results/*
+!results/README.md
+
+# Generated figure exports and layout audits
+figures_output/
+figures_scripts/**/figures_ready/
+figures_scripts/**/figures/
+figures_scripts/**/figures_fig5_segmented/
+figures_scripts/**/compact_figures/
+figures_scripts/**/compact_figure_QA/
+figures_scripts/**/layout_QA/
+figures_scripts/**/*_audit.json
+figures_scripts/**/compact_figure_data_check.json
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
