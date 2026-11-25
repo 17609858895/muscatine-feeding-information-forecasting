@@ -24,7 +24,7 @@ scripts/pipeline/  original modelling pipeline (run with results/ as working dir
 scripts/revision/  analyses behind the reported results (independent ensembles, intervals, commitments, ...)
 figures_scripts/   figure builders for the submitted figures
 interface/         local prediction interface (Section S8): code, fitted LightGBM models, examples, validation
-outputs/           retained predictions (CSV), result tables, PG-HQ network weights
+outputs/           retained predictions (CSV), result tables, fitted LGB-Δ/Cat-Δ models, PG-HQ network weights
 results/           empty working directory for regenerated intermediate files
 ```
 
